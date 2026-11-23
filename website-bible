@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELIABLE NOTARY CT — CONSOLIDATED TRAINING BIBLE v1.0 — Nov 23, 2026</title>
+<style>
+:root{--green:#103d20;--gold:#D4AF37;--navy:#0f2040;--light:#f7f5ef;--red:#b91c1c;--yellow:#FFEB3B}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:var(--light);line-height:1.55}
+a{color:var(--green)}.page{max-width:960px;margin:0 auto;padding:32px 24px;background:#fff;min-height:100vh}
+.cover{background:var(--green);color:#fff;text-align:center;padding:64px 24px}
+.cover h1{font-size:42px;margin:16px 0 8px}.gold{color:var(--gold);font-weight:bold}
+.spock{background:var(--red);color:#fff;padding:18px 16px;border:4px solid var(--gold);border-radius:8px;font-size:20px;font-weight:bold;margin:20px 0;line-height:1.4}
+.spock small{display:block;font-size:14px;font-weight:normal;margin-top:6px}
+.btn{display:inline-block;background:var(--gold);color:#000;padding:12px 22px;text-decoration:none;font-weight:bold;border-radius:6px;margin:8px}
+h2{border-left:8px solid var(--gold);padding-left:12px;color:var(--green);margin-top:48px}
+h3{color:var(--navy)}table{width:100%;border-collapse:collapse;margin:10px 0}th{background:var(--green);color:#fff;padding:10px;text-align:left}td{border:1px solid #ddd;padding:8px;vertical-align:top}
+pre{background:#111;color:#d4f7d4;padding:16px;overflow:auto;white-space:pre-wrap;font-size:13px;line-height:1.5;border-radius:8px}
+.lock{border:2px solid var(--gold);padding:14px;margin:10px 0;border-radius:8px;background:#fffdf2}
+.todo{border:2px solid var(--green);padding:14px;margin:10px 0;border-radius:8px;background:#f0f7f0}
+.pending{border:2px solid var(--red);padding:14px;margin:10px 0;border-radius:8px;background:#fff5f5}
+.done{border:2px solid var(--green);padding:14px;margin:10px 0;border-radius:8px;background:#f0f7f0}
+.starter{background:#fffbe6;border:2px dashed var(--green);padding:16px;border-radius:8px;font-size:16px;line-height:1.6}
+.toc a{display:block;padding:10px;border-bottom:1px solid #eee;text-decoration:none;font-size:18px}
+.warn{border:3px solid var(--red);padding:16px;border-radius:8px;background:#fff5f5;margin:14px 0}.warn b{color:var(--red)}
+.conflict{background:var(--yellow);border:3px solid #A37E00;padding:16px;border-radius:8px;margin:14px 0}
+.conflict b{color:#000}.conflict .label{background:#000;color:var(--yellow);padding:4px 10px;border-radius:4px;font-size:13px;letter-spacing:1px}
+.check{list-style:none;padding:0}.check li{display:flex;gap:10px;align-items:flex-start;background:#f0f7f0;border:1px solid #ddd;border-radius:8px;padding:10px;margin-bottom:8px}
+.check input{width:18px;height:18px;margin-top:2px;flex-shrink:0}.check li.p1{background:#fff5f5;border-color:#fca5a5}
+.box{background:#fff;border:1px solid #ccc;border-radius:8px;padding:16px;margin:12px 0}
+.danger{background:#fde8e8;border:2px solid var(--red);border-radius:8px;padding:14px;margin:12px 0}
+code{background:#eee;padding:2px 6px;border-radius:4px}.path{font-family:Consolas,monospace;font-size:13px}
+.note{color:#555;font-size:13px}
+@media print{.no-print{display:none} .page{padding:0} h2{break-before:page}}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+<div class="spock">⛔ SPOCK RULE — NO CODE UNTIL KEN SAYS "GIVE ME CODE"<small>Concept first. Then ask: "Do you want me to generate code?" — Never give HTML / PHP / inserts unless Ken says those 3 words: GIVE ME CODE</small></div>
+<h1>RELIABLE NOTARY CT<br><span class="gold">CONSOLIDATED TRAINING BIBLE</span></h1>
+<p>One doc. All 5 source docs merged. Nothing deleted. Conflicts flagged in Yellow.</p>
+<p><b>Version:</b> CONSOLIDATED BIBLE v1.0 &nbsp;|&nbsp; <b>Date:</b> Nov 23, 2026</p>
+<p>Owner: Reliable Notary LLC / Ken — ken@reliablenotaryct.us — (860) 518-5498</p>
+<p>Site: https://reliablenotaryct.us &nbsp;|&nbsp; Base: Waterbury, CT 06710 — Serving all of Connecticut</p>
+<p class="gold">RULE: Do NOT edit code in this doc. This is the TRAINING BIBLE. Edit templates, then regenerate via setup.php.</p>
+<p><b>SOURCES MERGED:</b><br>Doc #1 — MASTER RE-TOOL KIT v2026.11.19 PM summary<br>Doc #2 — MASTER RE-TOOL KIT v2.6 full HTML — Website Factory<br>Doc #3 — Uploaded full history file (chat.txt / MASTER full history)<br>Doc #4 — Server Cleanup Checklist HTML<br>Doc #5 — FULL PROJECT BACKUP Nov 9, 2026</p>
+<p><a class="btn" href="#starter">Copy Starter Block ↓</a> <a class="btn" href="#conflicts">See All Conflicts ↓</a> <a class="btn" href="#index">Open Index ↓</a></p>
+</div>
+
+<!-- HOW TO USE THIS BIBLE -->
+<div class="page"><h2>How To Use This Bible</h2>
+<p><b>What this is:</b> The single source of truth moving forward. Every future question, decision, and change gets added here. If it is not in here, it did not happen.</p>
+<p><b>How to resume any chat:</b> Paste the Starter Block in §0 at the top of every new chat + paste this Bible or say "We are working from CONSOLIDATED BIBLE v1.0". Meta AI starts fresh every chat. The starter is the only memory.</p>
+<p><b>How conflicts work:</b> Yellow boxes = CONFLICT — two source docs disagree, or a decision was never made. Do NOT guess. Do NOT silently pick one. Ken decides, then the Yellow box becomes a Locked Decision and the Version Table gets a new row.</p>
+<p><b>How to add to this Bible:</b> Every change = Date / File / Old → New / Test result + Version Table row + if it resolves a conflict, move it from §1 Conflicts to §3 Locked.</p>
+<p><b>Backup triggers:</b> "Create complete session backup" / "Full backup please" / "Save everything"</p>
+<p><b>User context:</b> Ken is building this site, teaching the AI each session. Ken is on WhatsApp, mobile, using FileZilla on PC. Ken gets frustrated when AI appears to lose memory. Always restate: live files in root, backups in root/backup/, admin is clean, template system, Town Hall image rule. Err on side of MORE detail, not less. User wants VERY thorough backup, even if 1000 pages.</p>
+<div class="warn"><b>⛔ LOCAL ONLY — DO NOT UPLOAD THIS BIBLE TO /public_html/</b><br>This Bible contains password-exposure plan, vendor list, pricing conflicts, and server paths. If uploaded, Google will find it. Keep in D:\Websites\... only. Or password-protected admin/ only.</div>
+</div>
+
+<!-- STARTER -->
+<div class="page" id="starter"><h2>0. STARTER BLOCK — Paste This At Top Of Every New Chat</h2>
+<p><b>Copy everything in the box below and paste it as your first message:</b></p>
+<div class="starter">
+<b>Spock mode ON. No code until I say "give me code".</b><br>
+<b>Concept first, then ask: "Do you want me to generate code?"</b><br>
+<b>We are working from CONSOLIDATED BIBLE v1.0 — Nov 23, 2026.</b><br><br>
+Today we are building: Guestbook first, then Sophia, Admin, Quote, Ads Rotator.<br>
+Locked: Booked → Guestbook opt-in checkbox (unchecked by default, no auto-publish).<br>
+Locked: Email Setup in setup.php — info@ / bookings@ / quotes@ / admin@ / owner@ per domain, must check created + tested before Launch.<br>
+Locked: Template Scripts order — Script 2 (setup-booked) first, then Script 1 (create-pages), then Script 3 (setup-Sophia-guestbook).<br>
+Locked: Dups NOT removed — awaiting Ken's call. Mark SUPERSEDED only.<br>
+Locked: Live files in ROOT, backups in ROOT/backup/, NEVER backups in /admin/. Town Hall image = /images/{town}.jpg, never hard-coded.
+</div>
+<p><b>Safe words:</b> Say <b>"give me code"</b> ONLY when you want code. Say <b>"give me code, html please"</b> for HTML. Say <b>"give me code, php please"</b> for PHP.</p>
+<p><b>Why this works:</b> Meta AI starts fresh every chat. This starter is the only memory. No starter = no Spock Rule.</p></div>
+
+<!-- CONFLICTS MASTER -->
+<div class="page" id="conflicts"><h2>1. CONFLICTS — ALL FLAGGED IN YELLOW — DO NOT GUESS</h2>
+<p><b>Rule:</b> Every Yellow box below must be decided by Ken before building touches it. When Ken decides, move it to §3 Locked and add a Version Table row.</p>
+
+<div class="conflict"><span class="label">CONFLICT #1 — PRICE — HIGHEST PRIORITY</span><br><b>Locked #7 says:</b> $10 on-site. "Standard notarization at our location is $10. Travel or mobile service may include additional fees — call (860) 518-5498 for a quote." Short: "On-site notarization $10. Travel may include additional fees."<br><b>admin/pricing.php says:</b> $15<br><b>ratecard.html says:</b> $5<br><b>Social Kanban bios say:</b> $5 AND $10 in different places<br><b>ratecard2.html says:</b> $150<br><b>Word doc 1-10 List #1 says:</b> "Pricing $15 → $10" — implies change to $10<br><b>Impact:</b> 4 price systems live at once for the same notary stamp. Do NOT publish new bios until ONE price is picked.<br><b>Fix required:</b> DECIDE ONE PRICE → update Locked #7 + admin/pricing.php to match + fix ALL Kanban bios/posts + verify quote.php / apostille-quote.php pull from admin/pricing.php only. Never hard-code $5 / $10 / $150 in a new file.</div>
+
+<div class="conflict"><span class="label">CONFLICT #2 — SOPHIA vs SOFIA SPELLING + IDENTITY</span><br><b>Locked #1 (v2.6):</b> Canonical spelling Sophia, not Sofia.<br><b>Nov 9 Backup + older files:</b> Sofia everywhere — <code>affiliate-sofia.php</code>, <code>sofia.jpg / sofia.png</code>, "Sofia affiliate page", "Backup Sofia image", "Sofia image, must be backed up"<br><b>Word doc §6D:</b> "D. Sofia / Sophia: Backup Sofia image, confirm affiliate page — Canonical spelling Sophia (Locked #1)"<br><b>Impact:</b> File names, image names, URLs, and copy all use old spelling. Renaming without redirect breaks links.<br><b>Fix required:</b> Ken confirms: Keep file <code>affiliate-sofia.php</code> as-is but display name = Sophia? Or rename file + image + add redirect? Confirm affiliate page purpose: affiliate? Bio? Landing page? Confirm image path: /images/sofia.jpg or other?</div>
+
+<div class="conflict"><span class="label">CONFLICT #3 — PRICING SINGLE SOURCE — WHICH FILE?</span><br><b>MASTER v2.6 §6G says:</b> <code>admin/pricing.php</code> is GOOD — Single source of truth. <code>pricing-config.php</code> (in root / SERVICES, 156 bytes) is OLD — Duplicate price source — Already quarantined → <code>pricing-config.php.BAK-PRIVATE</code>. admin/pricing.php replaces it.<br><b>Server Cleanup Checklist (Doc #4) Step 1 KEEP says:</b> <code>pricing-config.php</code> — Single source pricing — verified — KEEP — Do Not Touch.<br><b>Nov 9 Backup (Doc #5) says:</b> <code>admin/pricing-config.php</code> 811 bytes + <code>admin/pricing.php</code> 10,431 bytes — both exist in /admin/. Plus quote.php bugs #85-#88 include "missing pricing.php include".<br><b>Impact:</b> Three different files claim to be the single source. Quote / town pages could pull from wrong one.<br><b>Fix required:</b> Ken picks ONE file + ONE location. All other pricing files → .BAK-PRIVATE. Verify <code>admin/city-summary.php</code> pulls from the chosen file, not hard-coded.</div>
+
+<div class="conflict"><span class="label">CONFLICT #4 — BOOKED SLOTS — TIME + LENGTH</span><br><b>MASTER v2.6 Booked Template (§5.6.3):</b> Slots 9AM-7PM, 30-min, greyed if booked, Supabase, PRG, double-book check, .ics owner+surfer, "One of our Reliable staff will call you", Me.jpg side card, NO pricing in flow.<br><b>Server Cleanup Checklist Step 6 Test says:</b> <code>/booked/index.php</code> loads — calendar shows, 15-min slots, Mon-Fri 9am-8pm ET<br><b>MASTER v2026.11.19 (Doc #1) says:</b> /booked/ rebuilt + WORKS — Slots, Supabase, PRG, double-book check, .ics owner+surfer<br><b>Impact:</b> If we rebuild Booked from wrong spec, we break a working page.<br><b>Fix required:</b> Ken confirms: 30-min vs 15-min? 9AM-7PM vs 9am-8pm? Mon-Fri only vs 7 days? Do NOT rebuild Booked until this is locked. Script 2 must be built from proven 11:37 AM page.</div>
+
+<div class="conflict"><span class="label">CONFLICT #5 — BACKUP STRATEGY — /backup/ vs .BAK-PRIVATE</span><br><b>Nov 9 Backup (Doc #5) RULE:</b> LIVE town pages: <code>/public_html/reliablenotaryct.us/{town}.php</code> — BACKUPS: <code>/public_html/reliablenotaryct.us/backup/{town}.php</code> — NEVER put backup town pages inside /admin/. Do NOT delete backup/ folder.<br><b>MASTER v2.4/v2.5 Quarantine Rule (Doc #2) says:</b> Quarantine by renaming to <code>.BAK-PRIVATE</code>, never delete on day 1. Examples: <code>ratecard.html → ratecard.html.BAK-PRIVATE</code>, <code>social-kanban-v2.html → .BAK-PRIVATE</code>, <code>vendor-portals.html → .BAK-PRIVATE</code>, <code>pricing-config.php → .BAK-PRIVATE</code>, <code>admin/waterbury.php-old → .BAK-PRIVATE</code>.<br><b>Server Cleanup Checklist (Doc #4) says:</b> Move to <code>_archive/</code> folder, or outside public_html. Examples: qbo_tokens.json → _archive/ or outside, qbo__* → _archive/, TEST_* → _archive/, *.bak / *.old / *-copy.php → _archive/.<br><b>Impact:</b> Three different quarantine methods. If we mix them, we lose track of what is quarantined vs live.<br><b>Fix required:</b> Ken picks: (A) /backup/ folder for town-page backups only, (B) .BAK-PRIVATE rename for internal files, (C) _archive/ for test/QBO files. All three can coexist if we define which type goes where. Do NOT delete anything day 1.</div>
+
+<div class="conflict"><span class="label">CONFLICT #6 — TOWN PAGES — FLAT FILES vs SUPABASE vs /towns/ FOLDER</span><br><b>MASTER v2.6 §4 says:</b> TOWN PAGES — ~1,661 bytes = TEMPLATE (90% of towns). Town list in setup.php default = CT 169.<br><b>Nov 9 Backup (Doc #5) says:</b> ONE template, NO hard-coding. <code>berlin.php</code> knows slug = berlin, pulls from Supabase towns table OR page_details JSON, renders via shared template. To make NEW town, create row in towns table + thin {town}.php file. Towns Manager calls <code>/admin/api.php?action=list</code>.<br><b>Server Cleanup Checklist Step 4 says:</b> <code>/towns/</code> — Duplicate of flat /[city].php? Which one does Google / links use? Keep one, archive other. Waterbury duplicates checked — only ONE waterbury.php in root + ONE in /towns/ max.<br><b>Nov 9 Admin inventory:</b> <code>town-inventory.php</code> 2,295 bytes exists, <code>towns.php</code> says "does not add or delete towns" — missing Add Town feature.<br><b>Impact:</b> We have flat files, Supabase rows, AND a /towns/ folder — three systems for same towns. Berlin file exists but Supabase row does NOT exist, so Towns Manager cannot see Berlin.<br><b>Fix required:</b> Ken confirms canonical: Flat thin files in ROOT + Supabase rows = truth? Or /towns/ folder? Or generated pages? And: Need full list — all 169 CT towns? Or only service area? Confirm Waterbury = 0 miles rule.</div>
+
+<div class="conflict"><span class="label">CONFLICT #7 — APOSTILLE FEES — WHICH ARE REAL?</span><br><b>MASTER v2.4 Lessons:</b> Apostille Fees: $40 / $20 / $50 / $51 / $150 / $1.50/mi — which are real? Remove fake ones.<br><b>MASTER v2.6 §6F Part 2 says:</b> Verify Apostille Fees: $40 / $20 / $50 / $51 / $150 / $1.50/mi — which are real?<br><b>Other docs:</b> Apostille = Off by default. Send <code>apostille-quote.php</code> for audit before building (Still Not Audited). <code>apostille/header.php</code> + <code>index.php</code> exist. <code>apostille_OFFLINE/</code> has 8 county folders + index.php.<br><b>Fix required:</b> Ken vets every apostille fee. Do NOT publish apostille pages until fees are locked. Do NOT use ratecard2.html $150 as source.</div>
+
+<div class="conflict"><span class="label">CONFLICT #8 — QUOTE.PHP BUGS #85-#88 — COUNTING vs REAL BUGS</span><br><b>MASTER v2.4 says:</b> quote.php bugs #85-#88: Missing session_start(), session check bypass, missing pricing.php include, $51 math bug.<br><b>Appendix (Doc #2) says:</b> No single 1-105 numbered list found in Word doc — #85-#105 numbers were tonight's chat counting.<br><b>Fix required:</b> Treat #85-#88 as real bugs to fix, but do NOT treat 1-105 as a real list. Fix: session_start(), session check, pricing include, $51 math.</div>
+
+<div class="conflict"><span class="label">CONFLICT #9 — ADMIN FOLDER — WHAT IS IN IT?</span><br><b>Nov 9 Backup (Doc #5) admin/ inventory (4:15 PM):</b> .htaccess 140, .htpasswd 117, admin-api.php 8,650 UNKNOWN, admin-links.json 184, affiliate-sofia.php 4,208, api.php 4,208 THE REAL API, debug.php 466 OLD, error_log 14,543, footer.php 4,276, header.php 4,725, index.php 20,322 dashboard, kanban.php 17,249, pricing-config.php 811, pricing.php 10,431, quotes.log 196, send-quote.php 434, town-inventory.php 2,295, towns.php.<br><b>MASTER v2.5 §6G says:</b> admin/pricing.php GOOD, admin/city-summary.php 1,077 GOOD, admin/settings.php MISSING, admin/waterbury.php-old JUNK, admin/debug.php JUNK, admin/test.php JUNK, pricing-config.php in root OLD.<br><b>Server Cleanup Checklist Step 1 says:</b> /admin/ — Dashboard + pricing.php + towns.php + calendar — verified, Directory Privacy ON. Also says /includes/auto-header.php exists.<br><b>Fix required:</b> Re-inventory /admin/ live before building Admin Power Center. Do NOT assume Nov 9 list = Nov 19 list. Check: admin-api.php purpose? settings.php still missing? debug.php / test.php quarantined? secrets.php location?</div>
+
+<div class="conflict"><span class="label">CONFLICT #10 — SECRETS.PHP LOCATION + QBO TOKENS</span><br><b>Server Cleanup Step 2 says:</b> secrets.php — Is it INSIDE public_html? If YES: Download to PC, then move it OUTSIDE public_html (above /public_html/). Verify site still works. qbo_tokens.json → _archive/ or outside + Rotate / Reconnect QuickBooks. qbo__* → _archive/.<br><b>MASTER v2.5 §6F Part 4 #5 says:</b> Secrets / Includes: Confirm secrets.php outside public_html — Phase 1.<br><b>Nov 9 Backup:</b> Does not list secrets.php location. Lists qbo files in root SERVICES? MASTER v2.6 §4 lists QBO files in root: qbo_callback.php, qbo_config.php, qbo_connect.php, qbo_invoice_creator.php, qbo_last_request.log, qbo_test_no_api.php, qbo_tokens.json, qbo_webhook.php.<br><b>Fix required:</b> Verify secrets.php is OUTSIDE public_html. If any file was ever public and contained password/key/token/private calendar link, assume burned — rotate. Never paste passwords in chat. Never put passwords in any file.</div>
+
+<div class="conflict"><span class="label">CONFLICT #11 — HEADER / FOOTER — WHICH FILES ARE SHARED?</span><br><b>MASTER v2.6 §4 CORE says:</b> header.php + footer.php at ROOT.<br><b>Nov 9 Backup admin/ says:</b> admin/header.php 4,725 + admin/footer.php 4,276 also exist in /admin/.<br><b>Server Cleanup Step 1 says:</b> header.php at ROOT verified, footer.php at ROOT verified, includes services-block.php. Plus /includes/auto-header.php verified.<br><b>Fix required:</b> Confirm: Root header/footer = public site. Admin header/footer = admin only? Or duplicate? Do NOT duplicate per town. Do NOT edit one and think you edited the other.</div>
+
+<div class="conflict"><span class="label">CONFLICT #12 — GOOGLE ANALYTICS / TRACKING ID</span><br><b>Server Cleanup Step 6 says:</b> GA4 tag present — <code>G-MTF1VXMX6D</code> in header.php — verified in View Source.<br><b>MASTER v2.6 §6F Part 4 #10 says:</b> Google Tracking: Analytics, Search Console, GBP — verify all connected (no ID listed).<br><b>MASTER v2.6 §6H says:</b> Do NOT use Google Analytics as only source — you own the Hit Tracker log in Supabase table <code>hits</code>.<br><b>Fix required:</b> Verify GA4 ID is still correct + Search Console + GBP connected. Hit Tracker is separate, not a replacement for verifying GA4.</div>
+
+<div class="conflict"><span class="label">CONFLICT #13 — SITEMAP — DEFERRED vs VERIFIED</span><br><b>MASTER v2.6 Locked #13 says:</b> Sitemap DEFERRED until Booked done. Do NOT rebuild sitemap until Booked + Guestbook / Sophia URLs are final. §5.6.7 says Generated automatically from town list, DEFERRED.<br><b>Server Cleanup Step 1 says:</b> sitemap.xml — verified. Step 5 says: Sitemap.xml matches live files — no dead links.<br><b>Fix required:</b> Sitemap exists but is stale. Do NOT rebuild until Booked + Guestbook / Sophia URLs final, then rebuild once from town list.</div>
+
+<div class="conflict"><span class="label">CONFLICT #14 — LOCATIONS vs CITIES vs TOWNS NAMING</span><br><b>Server Cleanup:</b> locations.php — Hub, ALL 169 towns. /cities → /locations redirect in .htaccess.<br><b>MASTER v2.6:</b> .htaccess — bookacall → booked, www → non-www, /cities → /locations, clean URLs.<br><b>Nov 9 Backup:</b> Towns Manager, town pages, town-inventory.php — uses "towns" language.<br><b>Fix required:</b> Canonical public URL = /locations/ hub + /{town}.php pages? Confirm: /cities is old, /locations is new, /towns/ folder is NOT canonical unless Ken says so.</div>
+</div>
+
+<!-- INDEX -->
+<div class="page" id="index"><h2>2. Index</h2><div class="toc">
+<a href="#starter">0. Starter Block — Paste At Top Of Every Chat</a>
+<a href="#conflicts">1. Conflicts — ALL Flagged In Yellow</a>
+<a href="#index">2. Index</a>
+<a href="#version">3. Version Page — Full History</a>
+<a href="#locked">4. Locked Decisions</a>
+<a href="#server">5. Server Structure — Above + Inside public_html</a>
+<a href="#cleanup">6. Server Cleanup Checklist — Full</a>
+<a href="#structure">7. Site Structure — Text Tree (FileZilla)</a>
+<a href="#templates">8. Templates — 1 Copy Each</a>
+<a href="#setup">9. setup.php — 1-File Installer + Email Setup</a>
+<a href="#todo-original">10. TODO Original v2.3 + Status DONE vs PENDING</a>
+<a href="#tools">11. Tools I Use — TO BE LOCKED</a>
+<a href="#lessons">12. Lessons Learned — Nov 19 Night Audit</a>
+<a href="#consolidated">13. CONSOLIDATED TODO — ONE LIST — LIVE LIST</a>
+<a href="#admin">14. /admin/ Inventory — All Versions Merged</a>
+<a href="#tools-to-build">15. Tools To Build — Guestbook, Hit Tracker, Errors, KPIs</a>
+<a href="#backup-nov9">16. FULL PROJECT BACKUP Nov 9 — Full Detail</a>
+<a href="#towns">17. Town List + Town System</a>
+<a href="#backup-rules">18. Backup Rules / Spock Rules</a>
+<a href="#questions">19. Questions To Add As We Go — LIVING SECTION</a>
+<a href="#appendix">20. Appendix — Archive</a>
+</div></div>
+
+<!-- VERSION -->
+<div class="page" id="version"><h2>3. Version Page — Full History</h2>
+<table><tr><th>Version</th><th>Date</th><th>What Changed</th><th>Why</th></tr>
+<tr><td><b>CONSOLIDATED BIBLE v1.0</b></td><td>Nov 23, 2026</td><td>Merged all 5 source docs into 1 Bible. Added §1 Conflicts #1-14 in Yellow. Nothing deleted. This is now the living bible.</td><td>Ken: need as much info as possible, all questions added as we go.</td></tr>
+<tr><td><b>v2026.11.19 v2.6</b></td><td>Nov 19, 2026</td><td>Added §6H Tools To Build — Guestbook Export, DB Disconnect Fallback, Hit Tracker + Jump-Off, Unsubscribe, 404/Error Log, Dashboard Donuts + Histograms + KPI Gauges.</td><td>Ken: get ahead of KPIs — know where traffic comes from, where they jump off, what breaks.</td></tr>
+<tr><td><b>v2026.11.19 v2.5</b></td><td>Nov 19, 2026</td><td>Added §6F Consolidated TODO — ONE LIST (A-E + 1-10 + Phase 1-4 + §6A merged, 4 copies → 1). Added §6G /admin/ Inventory. No old content deleted.</td><td>Original Word doc had same TODOs repeated 4x. v2.3 collapsed them and lost detail. v2.5 restores them deduped.</td></tr>
+<tr><td><b>v2026.11.19 v2.4</b></td><td>Nov 19, 2026</td><td>Added §6D Lessons Learned + §6E Master TODO. Added Locked #14 Password Rule + #15 No Internal Files Public. Bumped Master to v2.4.</td><td>Night audit found 4 price systems, internal tools public, fake booking, placeholder calendar, server exposed, old/test folders live.</td></tr>
+<tr><td><b>v2026.11.19 v2.3</b></td><td>Nov 19, 2026</td><td>Added TODO #12-15 as PENDING: Banner Rotator ALL pages + fit images + BookedOrphan, Sitemap DEFERRED, Template Scripts order locked, Dups NOT removed awaiting call. Added §6B Status DONE vs PENDING.</td><td>Tomorrow 9am checklist — nothing on that list was built yet.</td></tr>
+<tr><td><b>v2026.11.19 v2.2</b></td><td>Nov 19, 2026</td><td>Added Spock Rule banner on cover + §0 Starter Block. Added §6B Tools placeholder. No code unless Ken says "give me code".</td><td>Rule was getting lost between chats.</td></tr>
+<tr><td><b>v2026.11.19 v2.1</b></td><td>Nov 19, 2026</td><td>Added LOCKED: Booked → Guestbook opt-in. Added LOCKED: Email Setup TODO in setup.php. Added TODO list §6A.</td><td>Guestbook needs opt-in, emails were being forgotten.</td></tr>
+<tr><td><b>v2026.11.19 v2</b></td><td>Nov 19, 2026</td><td>Deduped MASTER: 9,193 duplicate groups → 1 canonical copy. Added Cover/Index/Version/About. Added setup.php spec. Locked 7 decisions. Replaced 25 FileZilla screenshots with text tree. Kept 5 brand images.</td><td>MASTER was 46,572 paragraphs, unusable.</td></tr>
+<tr><td><b>v2026.11.19</b></td><td>Nov 19, 2026</td><td>/booked/ rebuilt + WORKS. Slots, Supabase, PRG, double-book check, .ics owner+surfer, "One of our Reliable staff" wording, no pricing on flow.</td><td>Fix 404s, stop duplicates.</td></tr>
+<tr><td><b>Server Cleanup Checklist</b></td><td>Nov 16, 2026 (backup folder name)</td><td>Created as companion to Reliable-Cleaned.html — Original MASTER doc kept untouched. 295 files, 20 dirs, 14.1 MB.</td><td>FileZilla / cPanel cleanup — Step 0-6 + Orphan Check + Final Tests.</td></tr>
+<tr><td><b>FULL PROJECT BACKUP</b></td><td>Nov 9, 2026</td><td>Full backup: server structure above public_html, admin inventory with sizes, backup/ folder rule, template system, Town Hall image rule, Berlin status, api.php blank bug, TODO A-F.</td><td>Resume doc — AI should NOT ask user to re-explain template, Town Hall image rule, or file locations.</td></tr>
+</table><p><b>Rule:</b> Every future change adds a row here. Never rewrite history.</p></div>
+
+<!-- LOCKED -->
+<div class="page" id="locked"><h2>4. Locked Decisions — Nov 19, 2026 + Nov 9, 2026</h2>
+<div class="lock"><b>1. Sophia</b> — Canonical spelling Sophia, not Sofia. — SEE CONFLICT #2 for file/image rename still pending.</div>
+<div class="lock"><b>2. Booked</b> — Final URL <b>/booked/</b>. Do NOT move to /book. Canonical is <code>/booked/index.php</code>. Old <code>/book-a-call.php</code> + <code>/bookacall/</code> are OLD — archive, do NOT keep as canonical.</div>
+<div class="lock"><b>3. ICS</b> — Customer <code>notary-booking.ics</code>, You <code>notary-booking-YYYY-MM-DD-HHMM.ics</code>.</div>
+<div class="lock"><b>4. Base</b> — Waterbury is base, serving all of Connecticut. Public: "Based in Waterbury, CT — Serving all of Connecticut". Waterbury = 0 miles.</div>
+<div class="lock"><b>5. Address</b> — NO home address published. Placeholder only: Waterbury City Hall, 235 Grand St, Waterbury, CT 06702 — geographic reference only, do NOT claim office there.</div>
+<div class="lock"><b>6. Email</b> — Canonical <b>ken@reliablenotaryct.us</b></div>
+<div class="lock"><b>7. Pricing Line</b> — "Standard notarization at our location is $10. Travel or mobile service may include additional fees — call (860) 518-5498 for a quote." Short: "On-site notarization $10. Travel may include additional fees." — SEE CONFLICT #1 — $10 vs $15 vs $5 vs $150 — NOT RESOLVED.</div>
+<div class="lock"><b>8. Booked → Guestbook Opt-In</b> — Checkbox in Booked: "[ ] Yes, email me after my appointment so I can leave a Guestbook review" — Unchecked by default. Saves <code>guestbook_opt_in = true</code> in Supabase booking row. No auto-publish. Admin approves. Post-appointment email sends Guestbook link, pre-fills Name / Town / Service.</div>
+<div class="lock"><b>9. Email Setup Per Domain</b> — Required before Launch: info@, bookings@, quotes@, admin@, owner@ for every new domain. Checkboxes: Emails created in cPanel + Forwarders tested. Site cannot be marked "Launched" until checked.</div>
+<div class="lock"><b>10. SPOCK RULE</b> — <b>NO CODE until Ken says "give me code".</b> Concept first, then ask "Do you want me to generate code?" Full page code only, never inserts. This rule lives in MASTER cover + §0 Starter Block + every new chat starter paste. Est Oct 11 2026, re-locked Nov 19 2026 in v2.3.</div>
+<div class="lock"><b>11. Template Scripts Order [NEW]</b> — Script 2 (setup-booked) FIRST from proven 11:37 AM page, then Script 1 (create-pages), then Script 3 (setup-Sophia-guestbook). Do NOT build 1 or 3 before 2 is proven.</div>
+<div class="lock"><b>12. Dups / Conflicts [NEW]</b> — NOT removed. Awaiting Ken's call. Mark SUPERSEDED only, keep in Archive. Do NOT delete.</div>
+<div class="lock"><b>13. Sitemap [NEW]</b> — DEFERRED until Booked done. Do NOT rebuild sitemap until Booked + Guestbook / Sophia URLs are final. — SEE CONFLICT #13.</div>
+<div class="lock"><b>14. Password / Credential Exposure = #1 Priority [NEW v2.4]</b> — If any file was ever public and contained a password, key, token, or private calendar link, assume it is burned. Rotate HostGator / Email / Google / vendor passwords + turn on 2FA. Never paste passwords in chat. Never put passwords in any file.</div>
+<div class="lock"><b>15. No Internal Files Public [NEW v2.4]</b> — Ratecards, Kanban, Vendor Portals, TODO lists, Master — LOCAL ONLY or password-protected admin/. Never as public .html in /public_html/. Quarantine by renaming to .BAK-PRIVATE, never delete on day 1. — SEE CONFLICT #5 for _archive/ vs .BAK-PRIVATE vs /backup/.</div>
+<div class="lock"><b>16. Privacy — Guestbook + Tracker [NEW v2.6]</b> — Guestbook emails NEVER sold / shared / published. Unsubscribe = 1 click, no login. Hit tracker logs pages, NOT names / emails / VINs. No VIN in tracker, ever.</div>
+<div class="lock"><b>17. Live vs Backup (Nov 9)</b> — LIVE town pages: <code>/public_html/reliablenotaryct.us/{town}.php</code> — BACKUPS: <code>/public_html/reliablenotaryct.us/backup/{town}.php</code> — NEVER put backup town pages inside /admin/. /admin/ should ONLY have admin files. Do NOT delete backup/ folder.</div>
+<div class="lock"><b>18. FileZilla LEFT vs RIGHT (Nov 9)</b> — LEFT = Local Windows PC. RIGHT = Server: <code>/home2/klmtech/public_html/reliablenotaryct.us/</code>. ONLY RIGHT changes live site. Editing / moving on LEFT does NOT change live site until you upload to RIGHT.</div>
+<div class="lock"><b>19. Town Hall Image Rule (Nov 9)</b> — Image path is dynamic: <code>/images/{town}.jpg</code> — Berlin = <code>/images/berlin.jpg</code>, Waterbury = <code>/images/waterbury.jpg</code>. Admin field: <code>townhall_image</code> inside page_details JSON. Do NOT hard-code /images/berlin.jpg inside template. Use variable.</div>
+<div class="lock"><b>20. One Template, No Hard-Coding (Nov 9)</b> — ONE template, NO hard-coding per town. To make NEW town, create row in towns table + thin {town}.php file that calls template, OR generate from Towns Manager. Do NOT copy-paste whole hard-coded page per town.</div>
+<p><b>Ken — Kenneth L. McClenithan, Connecticut Notary Public — Commission # SNPC.0188689</b></p>
+<p><b>About / Factory:</b> A factory for local service sites. 1 business, 1 base town, many town pages, Booked, Sophia, Guestbook, Admin. Build a new site in 10 minutes: Upload setup.php → Fill form → Click Build Site → Download new-site.zip + site builds live → Delete setup.php → Submit sitemap to Google. Small changes per site: Name, phone, email, base town/zip, state, colors/logo, town list, pricing line, about blurb. Never change: Structure, Booked logic, Sophia logic, SEO structure, PRG / double-book logic.</p></div>
+
+<!-- SERVER -->
+<div class="page" id="server"><h2>5. Server Structure — Above + Inside public_html</h2>
+<h3>Above public_html — CRITICAL — Do Not Confuse Local vs Server</h3>
+<table><tr><th>Folder / Path</th><th>What It Is</th></tr>
+<tr><td class="path">/home2/klmtech/</td><td>Your hosting account root</td></tr>
+<tr><td class="path">/home2/klmtech/public_html/</td><td>Web root for ALL sites on this account</td></tr>
+<tr><td class="path">/home2/klmtech/public_html/reliablenotaryct.us/</td><td>OUR SITE ROOT. This is the live website.</td></tr>
+<tr><td class="path">/home2/klmtech/.cpanel/, .htpasswds/, etc/, mail/, tmp/, logs/</td><td>Hosting system folders. Do not touch. NEVER TOUCH: /home2/klmtech/.cpanel/ — .htpasswds/ — etc/ — mail/ — tmp/ — logs/</td></tr>
+</table>
+<p><b>FileZilla:</b> LEFT pane = Your local Windows PC. Example: C:\Users\...\Desktop\ — RIGHT pane = Server: /home2/klmtech/public_html/reliablenotaryct.us/ — RULE: ONLY RIGHT matters for live website.</p>
+<h3>Inside Live Site Root — Nov 9 Detail</h3>
+<pre>/home2/klmtech/public_html/reliablenotaryct.us/
+  berlin.php                - LIVE Berlin town page, in ROOT, not in admin
+  waterbury.php             - LIVE Waterbury town page, in ROOT if present
+  index.php                 - Homepage
+  images/
+    berlin.jpg              - Town Hall image for Berlin
+    waterbury.jpg           - Town Hall image for Waterbury
+    sofia.jpg / sofia.png   - NEED TO CONFIRM NAME - Sofia image, must be backed up
+  admin/
+  backup/                   - NEW backup folder
+  blog/                     - TO BUILD
+  guestbook/                - TO BUILD
+  css/
+  js/</pre>
+<h3>Inside Live Site Root — Cleanup Checklist Counts — Nov 16</h3>
+<p><b>295 files, 20 dirs, 14.1 MB</b> — Path: <code>/home2/klmtech/public_html/reliablenotaryct.us/</code></p>
+<h3>System Folders — NEVER TOUCH</h3>
+<p><code>/home2/klmtech/.cpanel/</code> — <code>.htpasswds/</code> — <code>etc/</code> — <code>mail/</code> — <code>tmp/</code> — <code>logs/</code> — If you are not sure, STOP and ask Spock before deleting.</p>
+<div class="warn"><b>Hidden files:</b> FileZilla — Top menu &gt; Server &gt; Force showing hidden files — ON. If you can't see <code>.htaccess</code>, stop and turn it on.</div>
+</div>
+
+<!-- CLEANUP -->
+<div class="page" id="cleanup"><h2>6. Server Cleanup Checklist — Full (Doc #4)</h2>
+<p><b>For FileZilla / cPanel — /home2/klmtech/public_html/reliablenotaryct.us/ — 295 files, 20 dirs, 14.1 MB</b></p>
+<p><span style="background:#FFD23C;padding:8px 12px;border-radius:6px;font-weight:bold">RULE: LEFT = PC, RIGHT = Server. Only RIGHT changes live site.</span> &nbsp; Print this. Check boxes as you go. Do NOT delete anything until Step 0 backup is done.</p>
+<h3>Step 0 — Before You Touch Anything</h3><ul class="check">
+<li><input type="checkbox"><span>I am in FileZilla, RIGHT side shows: <span class="path">/home2/klmtech/public_html/reliablenotaryct.us/</span></span></li>
+<li><input type="checkbox"><span>I turned ON “Force showing hidden files” — I can see <code>.htaccess</code></span></li>
+<li><input type="checkbox"><span>I made a folder on my PC called <code>Website-Live-Copy-2026-11-16</code></span></li>
+<li><input type="checkbox"><span>I dragged EVERYTHING from RIGHT to LEFT — full backup on PC</span></li>
+<li><input type="checkbox"><span>I downloaded <code>site-backup-10-30-26.zip</code> to my PC — verified it opens</span></li>
+<li><input type="checkbox"><span>I made a second backup in cPanel: File Manager &gt; Select All &gt; Compress &gt; Download ZIP</span></li></ul>
+<h3>Step 1 — KEEP — Do Not Touch These</h3><p class="note">Just verify they exist. Do not move, rename, or delete.</p><ul class="check">
+<li><input type="checkbox"><span><span class="path">header.php</span> — at ROOT — verified</span></li>
+<li><input type="checkbox"><span><span class="path">footer.php</span> — at ROOT — verified, includes services-block.php</span></li>
+<li><input type="checkbox"><span><span class="path">index.php</span> — Home — verified</span></li>
+<li><input type="checkbox"><span><span class="path">locations.php</span> — Hub, ALL 169 towns — verified</span></li>
+<li><input type="checkbox"><span><span class="path">pricing-config.php</span> — Single source pricing — verified — SEE CONFLICT #3</span></li>
+<li><input type="checkbox"><span><span class="path">sitemap.xml</span> — verified — SEE CONFLICT #13</span></li>
+<li><input type="checkbox"><span><span class="path">.htaccess</span> — 301 /index.html → / — verified, backed up to PC first</span></li>
+<li><input type="checkbox"><span><span class="path">.htpasswd</span> — Admin protection — verified — [PASSWORD REMOVED]</span></li>
+<li><input type="checkbox"><span><span class="path">/admin/</span> — Dashboard + pricing.php + towns.php + calendar — verified, Directory Privacy ON</span></li>
+<li><input type="checkbox"><span><span class="path">/includes/</span> — auto-header.php — verified</span></li>
+<li><input type="checkbox"><span><span class="path">/assets/ + /images/</span> — Logos + town images — verified</span></li>
+<li><input type="checkbox"><span><span class="path">data/city-mileage.json</span> — verified</span></li>
+<li><input type="checkbox"><span><span class="path">/[city].php</span> — 169 flat city pages — count them: ____ / 169</span></li></ul>
+<h3>Step 2 — SECURITY — Move Out / Rotate FIRST</h3><div class="danger"><strong>Assume exposed if it was in public_html.</strong> Move first, then rotate. Do not just delete — you need the file to know what to rotate.</div><ul class="check">
+<li><input type="checkbox"><span><span class="path">secrets.php</span> — Is it INSIDE public_html? If YES: Download to PC, then move it to OUTSIDE public_html (above /public_html/). Verify site still works. — SEE CONFLICT #10</span></li>
+<li><input type="checkbox"><span><span class="path">qbo_tokens.json</span> — Downloaded to PC, moved to <code>_archive/</code> or outside public_html, then <strong>Rotated / Reconnected QuickBooks</strong></span></li>
+<li><input type="checkbox"><span><span class="path">qbo__*</span> — All files starting qbo__ — moved to <code>_archive/</code></span></li>
+<li><input type="checkbox"><span><span class="path">phpinfo.php</span> — Downloaded, then DELETED from server</span></li>
+<li><input type="checkbox"><span><span class="path">test-api.php</span> — Downloaded, then moved to <code>_archive/</code></span></li>
+<li><input type="checkbox"><span><span class="path">TEST_*</span> — All TEST_ files — moved to <code>_archive/</code></span></li>
+<li><input type="checkbox"><span><span class="path">qbo_log / *.log</span> — Logs — downloaded, then moved out of public_html</span></li>
+<li><input type="checkbox"><span>Supabase keys rotated? — Checked Supabase Dashboard &gt; Project Settings &gt; API — new keys in <code>secrets.php</code> only, NOT in chat</span></li>
+<li><input type="checkbox"><span>QuickBooks reconnected? — Tested booking → QBO hook works</span></li></ul>
+<h3>Step 3 — DELETE From Server (After Backup)</h3><ul class="check">
+<li><input type="checkbox"><span><span class="path">site-backup-10-30-26.zip</span> — Already on PC — DELETED from server</span></li>
+<li><input type="checkbox"><span><span class="path">/book-a-call.php</span> — OLD — DELETED — Canonical is <code>/booked/index.php</code></span></li>
+<li><input type="checkbox"><span><span class="path">ads/admin.php</span> — Standalone password — DELETED / MERGED into main <code>/admin/</code> — No second password</span></li>
+<li><input type="checkbox"><span>Any other <code>*.zip</code> on server — Downloaded to PC, then DELETED from server</span></li>
+<li><input type="checkbox"><span>Any <code>*.bak / *.old / *-copy.php</code> — Moved to <code>_archive/</code>, not left in root</span></li></ul>
+<h3>Step 4 — REVIEW — Decide: Keep / Merge / Delete</h3><p class="note">Do NOT delete these yet. Open each one, check if it is linked from anywhere, then decide.</p>
+<table><tr><th>Check</th><th>File / Folder</th><th>Question to Answer</th><th>Decision</th></tr>
+<tr><td><input type="checkbox"></td><td class="path">/towns/</td><td>Duplicate of flat /[city].php? Which one does Google / links use?</td><td>Keep one, archive other: ______</td></tr>
+<tr><td><input type="checkbox"></td><td class="path">/bookacall/index.php</td><td>Duplicate of /booked/index.php?</td><td>Keep /booked, archive this: ______</td></tr>
+<tr><td><input type="checkbox"></td><td class="path">/guestbook/index.php</td><td>Linked from nav/footer? Or orphan?</td><td>Keep / Remove link / Archive: ______</td></tr>
+<tr><td><input type="checkbox"></td><td class="path">/apps/</td><td>What is in here? Linked anywhere?</td><td>Keep / Archive: ______</td></tr>
+<tr><td><input type="checkbox"></td><td class="path">bookkeeper.html</td><td>Linked? Needed?</td><td>Keep / Archive: ______</td></tr>
+<tr><td><input type="checkbox"></td><td class="path">bedside-flyer.html</td><td>Print only? Keep locally, remove from server?</td><td>Keep local / Keep server: ______</td></tr>
+<tr><td><input type="checkbox"></td><td class="path">apostille-*.php / *-hub.php</td><td>Duplicates? Should be ?service=apostille only?</td><td>Keep one, archive rest: ______</td></tr>
+<tr><td><input type="checkbox"></td><td class="path">County pages: fairfield.php etc.</td><td>Should be ?county=fairfield only?</td><td>Keep / Archive: ______</td></tr></table>
+<h3>Step 5 — Orphan Check</h3><ul class="check">
+<li><input type="checkbox"><span>Ran orphan check: every file in FileZilla — is it linked from nav, footer, locations.php, or sitemap.xml?</span></li>
+<li><input type="checkbox"><span>Waterbury duplicates checked — only ONE waterbury.php in root + ONE in /towns/ max — other deleted / archived</span></li>
+<li><input type="checkbox"><span><code>/booked/</code>, <code>/guestbook/</code>, <code>/apps/</code> checked for orphans — listed: ___________________</span></li>
+<li><input type="checkbox"><span>Sitemap.xml matches live files — no dead links</span></li></ul>
+<h3>Step 6 — Final Tests After Cleanup</h3><ul class="check">
+<li><input type="checkbox"><span>Home <code>/</code> loads — white header, black text, green buttons, gold CTA, phone bar sticky</span></li>
+<li><input type="checkbox"><span><code>/locations.php</code> loads — ALL 169 towns show, 8 counties</span></li>
+<li><input type="checkbox"><span>3 city pages tested: Waterbury ____ Bridgeport ____ Hartford ____ — all load, no double header</span></li>
+<li><input type="checkbox"><span><code>/booked/index.php</code> loads — calendar shows, 15-min slots, Mon-Fri 9am-8pm ET — SEE CONFLICT #4</span></li>
+<li><input type="checkbox"><span><code>/quote/index.php</code> loads — prices come from <code>pricing-config.php</code> only — SEE CONFLICT #3</span></li>
+<li><input type="checkbox"><span><code>/admin/</code> asks for login — <code>.htpasswd</code> still works</span></li>
+<li><input type="checkbox"><span><code>/index.html</code> → redirects to <code>/</code> — 301 works</span></li>
+<li><input type="checkbox"><span>GA4 tag present — <code>G-MTF1VXMX6D</code> in header.php — verified in View Source — SEE CONFLICT #12</span></li>
+<li><input type="checkbox"><span>No <code>phpinfo.php</code>, no <code>*.zip</code>, no <code>qbo_tokens.json</code> left in public_html</span></li>
+<li><input type="checkbox"><span><code>secrets.php</code> is OUTSIDE public_html — verified in FileZilla (above /public_html/)</span></li></ul>
+<div class="box"><strong>Cleanup Log:</strong><br>Date started: _______________ Date finished: _______________<br>Backup folder on PC: <code>Website-Live-Copy-2026-11-16</code> — Verified? ☐ Yes<br>Files moved to _archive: ___________________________________________<br>Files deleted from server: _________________________________________<br>Tokens rotated: ☐ Supabase ☐ QuickBooks<br>Notes: _____________________________________________________________</div>
+<p style="text-align:center;color:#666"><small>Reliable Notary CT — Server Cleanup Checklist — Companion to Reliable-Cleaned.html — Original MASTER doc kept untouched.</small></p></div>
+
+<!-- STRUCTURE -->
+<div class="page" id="structure"><h2>7. Site Structure — Text Tree (FileZilla)</h2>
+<p><b>Source:</b> FileZilla screenshots, /public_html/reliablenotaryct.us — Oct 30, 2026. Screenshots archived, this tree replaces them.</p>
+<pre>
+reliablenotaryct.us / public_html / reliablenotaryct.us/
+├── TOP FOLDERS: images/ | mcclenithan.com/ | portfolio/ | reliablenotaryct.us/
+│   ├── .well-known/ | admin/ | ads/ | apostille/ | apostille_OFFLINE/ | blog/
+├── ADMIN: admin/city-summary.php (1,077 bytes)
+├── APOSTILLE: apostille/header.php (986) + index.php (4,948)
+├── APOSTILLE_OFFLINE: fairfield/hartford/litchfield/middlesex/new-haven/new-london/tolland/windham-county/ + index.php (5,190)
+├── BLOG: blog/index.php (1,156)
+├── CORE: index.php | header.php | footer.php | styles.css (1,329) | robots.txt (107) | sitemap.xml (22,008) | site.webmanifest (78) | site-backup-10-30-26.zip (674,195) | social-kanban-v2.html (12,183)
+├── SERVICES: power-of-attorney.php (2,003) | pricing-config.php (156) | process-contact.php (5,316) | quote.php (1,238) | ratecard.html (6,053) | ratecard2.html (9,953) | service-template.php (891) | services-index.php (1,830) | shipping.html (3,590) | vendor-portals.html (5,753)
+├── QBO: qbo_callback.php (853) | qbo_config.php (462) | qbo_connect.php (231) | qbo_invoice_creator.php (1,671) | qbo_last_request.log (21,184) | qbo_test_no_api.php (580) | qbo_tokens.json (736) | qbo_webhook.php (6,726)
+├── COUNTY PAGES (~3,000-3,500): tolland-county.php (3,382) | windham-county.php (3,508) + 6 others
+└── TOWN PAGES — ~1,661 bytes = TEMPLATE (90% of towns)
+    portland | preston | prospect | putnam | redding | ridgefield | roxbury | salem | salisbury | scotland | sharon | shelton | sherman | simsbury | somers | southbury | southington | sprague | stafford | stamford | sterling | stonington | stratford | suffield | thompson | tolland | torrington | trumbull | union | vernon | voluntown | wallingford | warren | washington | waterbury (base) | waterford | watertown | westbrook | weston | westport | wethersfield | willington | wilton | winchester | windham | windsor | wolcott | woodbridge | woodbury | woodstock + A-O towns (same pattern)
+    ★ SPECIALS (4,400-5,000): rocky-hill (4,469) | south-windsor (4,490) | west-hartford (5,003) | west-haven (4,549) | windsor-locks (4,490)
+    ✕ DUPLICATES TO KILL IN v2 — NOW ON HOLD, DO NOT DELETE: southwindsor vs south-windsor | westhartford vs west-hartford | westhaven vs west-haven | windsorlocks vs windsor-locks
+    ✕ STUB TO FIX: seymour.php = 47 bytes only
+KEY FINDINGS:
+1. Template proof: ~90% town pages = exactly 1,661 bytes.
+2. Specials keep extra content — keep as exceptions.
+3. Duplicates: 1 canonical name each in v2 — BUT DO NOT DELETE until Ken says so.
+4. QBO stays separate — NOT part of town template.
+</pre></div>
+
+<!-- TEMPLATES -->
+<div class="page" id="templates"><h2>8. Templates — 1 Copy Each</h2>
+<p><b>8.1 Header/Footer</b> — 1 copy. Nav: Home, About, Guestbook, Booked. Phone, email, Sophia button, banner slot: <code>&lt;?php $slot='top'; include 'ads/rotator.php'; ?&gt;</code> — SEE CONFLICT #11 for root vs admin vs /includes/ headers.</p>
+<p><b>8.2 Town Template</b> — Placeholders: {{TOWN}} {{ZIP}} {{COUNTY}} {{BUSINESS_NAME}} {{PHONE}} {{EMAIL}} {{PRICING_LINE}} {{PRIMARY_COLOR}}. Includes hero, services, FAQ schema, canonical, Notary schema, areaServed.</p>
+<p><b>8.3 Booked Template</b> — Fixed 11:37 AM version. Name/Phone/Email/City/Date/Time Slot/Service/Message, slots 9AM-7PM 30-min, greyed if booked, Supabase, PRG, double-book check, .ics owner+surfer, "One of our Reliable staff will call you", Me.jpg side card, NO pricing in flow. <b>+ Guestbook opt-in checkbox (Locked #8) — unchecked by default, saves guestbook_opt_in.</b> — SEE CONFLICT #4 for 15-min vs 30-min.</p>
+<p><b>8.4 Sophia Widget</b> — "I can't notarize or officiate — but I can help you get to the right place." Links: Booked, Quote, Guestbook. Disclaimer: "Virtual assistant • Not a real person"</p>
+<p><b>8.5 Pricing Config</b> — admin/pricing.php with fallback so it can NEVER crash. — SEE CONFLICT #3.</p>
+<p><b>8.6 .htaccess</b> — bookacall → booked, www → non-www, /cities → /locations, clean URLs. Plus 301 /index.html → /.</p>
+<p><b>8.7 Sitemap / Robots</b> — Generated automatically from town list. <b>DEFERRED — do NOT rebuild until Booked done.</b> — SEE CONFLICT #13.</p></div>
+
+<!-- SETUP -->
+<div class="page" id="setup"><h2>9. setup.php — 1-File Installer + Email Setup</h2>
+<h3>Form Fields</h3><p><b>Business:</b> Name, Phone, Email, Base Town, Base ZIP, State, Service Area Text, Pricing Line (pre-filled), About Blurb<br><b>Color Scheme:</b> Primary, Secondary, Accent/Gold, Button Text — with live preview<br><b>Town List:</b> [Use CT 169] / [Upload towns.csv] / [Single town only]<br><b>Supabase:</b> URL, Key, Radio: [New project for this site] / [Shared project + prefix]</p>
+<h3>Email Setup — Required Before Launch [LOCKED #9]</h3><p>For every new domain, create in HostGator cPanel:</p><ul><li>info@newdomain.com — Main / forward to owner</li><li>bookings@newdomain.com — Booked confirmations</li><li>quotes@newdomain.com — Quote form</li><li>admin@newdomain.com — Admin / resets (do NOT publish)</li><li>owner@newdomain.com — Owner personal, forward only</li></ul>
+<p><b>Form fields:</b> Owner Email (where forwards go), Bookings Email, Quotes Email, Info Email<br><b>Checkboxes (must check to mark Launched):</b> [ ] Emails created in cPanel &nbsp; [ ] Forwarders tested — Send test from Booked + Quote</p>
+<h3>Build Steps</h3><ol><li>Read form → config</li><li>Fill templates with config + colors</li><li>Build all pages + sitemap + robots + .htaccess</li><li>Output: Live site + downloadable new-site.zip</li><li>Prompt: Delete setup.php</li></ol>
+<p><b>Supabase Rule:</b> Your own sites: 1 shared project <code>master-template</code>, table per site <code>{{prefix}}_bookings</code>. Client sites you sell: 1 new project per site, table <code>bookings</code>.</p>
+<div style="background:#103d20;color:#fff;padding:16px;border-radius:8px">Live Preview — Primary #103d20 / Gold #D4AF37 &nbsp; <span style="background:#D4AF37;color:#000;padding:8px 14px;border-radius:6px;font-weight:bold">Book Now</span></div></div>
+
+<!-- TODO ORIGINAL + STATUS -->
+<div class="page" id="todo-original"><h2>10. TODO Original v2.3 + Status DONE vs PENDING</h2>
+<p><b>Note:</b> Original §6A list. The LIVE list is §13 Consolidated TODO. Do NOT work from two lists — use §13.</p>
+<div class="todo"><b>1. Guestbook [PENDING]</b> — /guestbook/ — Approved-only, Admin approves.</div>
+<div class="todo"><b>2. Sophia [PENDING]</b> — Widget, "I can't notarize or officiate..." — Canonical spelling Sophia locked.</div>
+<div class="todo"><b>3. Admin [PENDING]</b> — Approve Guestbook, View Bookings, Edit Pricing (fallback)</div>
+<div class="todo"><b>4. Quote / Contact [PENDING]</b> — Emails owner + saves to Kanban</div>
+<div class="todo"><b>5. Ads Rotator [PENDING]</b> — ads/rotator.php, house banner fallback</div>
+<div class="todo"><b>6. Kanban [PENDING]</b> — With Email field — LOCAL ONLY, never public .html</div>
+<div class="todo"><b>7. Apostille [PENDING]</b> — Off by default</div>
+<div class="todo"><b>8. Blog [PENDING]</b> — Off by default</div>
+<div class="todo"><b>9. QBO [PENDING]</b> — Off by default</div>
+<div class="todo"><b>10. Booked → Guestbook Opt-In [PENDING - LOCKED]</b> — Checkbox unchecked by default, saves guestbook_opt_in, no auto-publish</div>
+<div class="todo"><b>11. Email Setup in setup.php [PENDING - LOCKED]</b> — info@ / bookings@ / quotes@ / admin@ / owner@ per domain</div>
+<div class="pending"><b>12. Banner Rotator ALL Pages + Fit Images + BookedOrphan [PENDING]</b> — Rotator on ALL pages, fit images mobile + desktop, every city page links to Booked</div>
+<div class="pending"><b>13. Sitemap [PENDING - DEFERRED]</b> — DEFERRED until Booked done.</div>
+<div class="pending"><b>14. Template Scripts Order [PENDING - LOCKED]</b> — Script 2 first, then 1, then 3.</div>
+<div class="pending"><b>15. Dups / Conflicts [PENDING - AWAITING KEN'S CALL]</b> — NOT removed. Mark SUPERSEDED only.</div>
+<h3>Status — DONE vs PENDING — Nov 19, 2026</h3>
+<h3>DONE</h3>
+<div class="done"><b>✓ Booked /booked/ rebuilt + WORKS</b> — Slots, Supabase, PRG, double-book check, .ics owner+surfer, "One of our Reliable staff" wording, no pricing on flow.</div>
+<div class="done"><b>✓ MASTER v2.3 deduped</b> — 9,193 duplicate groups → 1 canonical copy.</div>
+<div class="done"><b>✓ Town Template Proof</b> — ~90% town pages = 1,661 bytes. Specials identified. Stub seymour.php identified.</div>
+<div class="done"><b>✓ Locked Decisions #1-13</b> — Sophia spelling, /booked/, ICS, Base, Address, Email, Pricing, Guestbook opt-in, Email Setup, Spock Rule, Scripts Order, Dups Hold, Sitemap Deferred.</div>
+<h3>PENDING — Use §13 Consolidated TODO as live list</h3>
+<p>Guestbook, Sophia, Admin, Quote, Ads Rotator, Kanban, Apostille, Blog, QBO, Booked→Guestbook opt-in, Email Setup, Banner Rotator ALL pages + Fit Images + BookedOrphan, Sitemap (deferred), Template Scripts 1-2-3, Dups / Conflicts (awaiting call).</p></div>
+
+<!-- TOOLS -->
+<div class="page" id="tools"><h2>11. Tools I Use — TO BE LOCKED</h2>
+<p><b>Status:</b> NOT locked yet. Ken to confirm full list tomorrow.</p>
+<p><b>Draft so far:</b> HostGator (ONLY host) / GoDaddy DEAD / FileZilla / Supabase / setup.php / MASTER v2.6 / HostGator cPanel Email + Forwarders / Cash App QR / QBO invoicing / Google Search Console + Maps</p>
+<p><b>Questions to answer:</b> WordPress? Canva / Photoshop? Namecheap / Cloudflare? Stripe / PayPal / Zelle? ChatGPT / Claude / Meta AI for writing?</p>
+<p>Once Ken confirms, this section becomes LOCKED and setup.php will use ONLY these tools.</p>
+<p><b>Brand images to keep:</b> banner.png, logo.png, ken.jpg, business-card.png, cashapp-qr.png</p></div>
+
+<!-- LESSONS -->
+<div class="page" id="lessons"><h2>12. Lessons Learned — Nov 19, 2026 Night Audit — v2.4</h2>
+<div class="warn"><b>⛔ LOCAL ONLY — DO NOT UPLOAD THIS MASTER TO /public_html/</b><br>This Master contains password-exposure plan, vendor list, and prices. If uploaded, Google will find it. Keep in D:\Websites\... only.</div>
+<h3>What We Discovered</h3><ul>
+<li><b>1. 4 price systems live at once:</b> $5, $10, $15, and $150 for the same notary stamp. Sources: admin/pricing.php ($15), ratecard.html ($5), Social Kanban bios ($5 and $10), ratecard2.html ($150). — SEE CONFLICT #1</li>
+<li><b>2. Internal tools were public:</b> Ratecards (Sedgwick pitch examples), Social Kanban (full launch plan), Vendor Portals (7 vendor logins list). None had a login.</li>
+<li><b>3. Fake booking:</b> ratecard2.html claimed “blocked automatically when I'm on appointments” but book.php was commented out. It just opened SMS + email.</li>
+<li><b>4. Placeholder live:</b> Calendar iframe was AcZssZx8p_example_replace_with_yours — live on site.</li>
+<li><b>5. Server + email exposed:</b> gator4049.hostgator.com + ken@reliablenotaryct.us + Yahoo email in footers / code.</li>
+<li><b>6. Old / test folders still live:</b> apostille-old, apostille-test, test, tools, ratecard folder — not audited yet, likely duplicates with old prices.</li>
+<li><b>7. VIN collection in open chat:</b> ratecard2.html asked for VIN Last 6 in plain text box, sent via SMS/email, no privacy note.</li>
+<li><b>8. quote.php bugs #85-#88:</b> Missing session_start(), session check bypass, missing pricing.php include, $51 math bug. — SEE CONFLICT #8</li></ul>
+<h3>How We Prevent It</h3><ul>
+<li><b>1. ONE price source:</b> admin/pricing.php only. Never hard-code $5 / $10 / $150 in a new file. — SEE CONFLICT #3</li>
+<li><b>2. No internal files in /public_html/:</b> Local ONLY, or password-protected admin/. Never as public .html.</li>
+<li><b>3. No server names, passwords, keys in any file:</b> No gator4049, no password, no api_key, no private calendar link in code.</li>
+<li><b>4. No fake booking claims:</b> Never say “blocked automatically” unless real calendar blocking is tested.</li>
+<li><b>5. No test / old folders live:</b> *-old, *-test, test/, tools/ get deleted or renamed to .BAK-PRIVATE the day testing ends.</li>
+<li><b>6. No VIN / sensitive data in open forms:</b> VINs only via secure intake, not chat box + SMS.</li>
+<li><b>7. Never log in from email:</b> Vendor logins only from typed URL or browser bookmark.</li>
+<li><b>8. Quarantine, don't delete:</b> Rename to .BAK-PRIVATE first. Delete only after 30 days confirmed clean.</li></ul>
+<p><b>Note on Locked #7 Pricing Line:</b> Locked #7 says $10 on-site. admin/pricing.php currently says $15. This conflict is NOT resolved yet. Do NOT publish new bios until ONE price is picked in §13.</p></div>
+
+<!-- CONSOLIDATED TODO -->
+<div class="page" id="consolidated"><h2>13. CONSOLIDATED TODO — ONE LIST — LIVE LIST — v2.5 + Nov 9 A-F Merged</h2>
+<p><b>Source:</b> Original Word doc — Section 6 A-E (4 copies → 1), 1-10 List (2 copies → 1), Phase 1-4, + Master v2.3 §6A #1-15, + Tonight §12/§13, + Nov 9 Backup TODO A-F. <b>Duplicates removed. Work from THIS list only.</b></p>
+<div class="warn"><b>⛔ ORDER MATTERS — DO NOT SKIP</b><br>Do #1 Passwords first. Then Quarantine. Then Prices. Then Admin Cleanup. Then Build. If you build before passwords, you build on a burned server.</div>
+<h3>PART 1 — #1 PASSWORDS + QUARANTINE — DO FIRST TOMORROW</h3><ul class="check">
+<li class="p1"><input type="checkbox"><span><b>Change HostGator cPanel password</b> — Do NOT paste password in chat</span></li>
+<li class="p1"><input type="checkbox"><span><b>Change email password</b> for ken@reliablenotaryct.us</span></li>
+<li class="p1"><input type="checkbox"><span><b>Change Yahoo password</b> if still used</span></li>
+<li class="p1"><input type="checkbox"><span><b>Change Google password</b> that owns Calendar Appointments</span></li>
+<li class="p1"><input type="checkbox"><span><b>Turn on 2FA:</b> HostGator, Google, Yahoo</span></li>
+<li class="p1"><input type="checkbox"><span><b>Change 7 vendor passwords:</b> Sedgwick, cxchoice, Close to Clear, NotaryDash, NotaryGo, Simple Signings, Superior</span></li>
+<li class="p1"><input type="checkbox"><span><b>Search quarantined copies</b> for password / api_key / secret / token — rotate any secret found</span></li>
+<li><input type="checkbox"><span><b>Quarantine in FileZilla (RIGHT side only):</b> ratecard.html, ratecard2.html, social-kanban-v2.html, vendor-portals.html, pricing-config.php → all → <b>.BAK-PRIVATE</b> — SEE CONFLICT #5</span></li>
+<li><input type="checkbox"><span>Remove <b>gator4049</b> server name from any live page — search live site</span></li></ul>
+<h3>PART 2 — PRICES — FIX ONCE, IN ONE PLACE</h3><ul class="check">
+<li><input type="checkbox"><span><b>DECIDE ONE PRICE:</b> Locked #7 says $10 on-site vs admin/pricing.php says $15 — pick ONE, update Locked #7 + admin/pricing.php to match — SEE CONFLICT #1</span></li>
+<li><input type="checkbox"><span>Vet ALL pricing — HIGH priority (Phase 4): admin/pricing.php, quote.php, apostille-quote.php must all pull from admin/pricing.php — SEE CONFLICT #3</span></li>
+<li><input type="checkbox"><span>Fix <b>ALL</b> Social Kanban bios + posts to that ONE price — do NOT paste $5 / $10 versions live</span></li>
+<li><input type="checkbox"><span>Verify Apostille Fees: $40 / $20 / $50 / $51 / $150 / $1.50/mi — which are real? Remove fake ones — SEE CONFLICT #7</span></li>
+<li><input type="checkbox"><span>Fix quote.php — #85-#88: missing session_start(), session check bypass, missing pricing.php include, $51 math bug — SEE CONFLICT #8</span></li>
+<li><input type="checkbox"><span>Create <b>PRIVATE PDF</b> for next company pitch — Transfer-Agent-Rate-Card.pdf — final prices only, local only</span></li>
+<li><input type="checkbox"><span>Do NOT re-publish Ratecards as live URLs</span></li></ul>
+<h3>PART 3 — ORIGINAL WORD DOC — SECTION 6 A-E — IN ORDER — DO NOT SKIP</h3><ul class="check">
+<li><input type="checkbox"><span><b>A. Finish Today's Bug:</b> debug.php, api.php JSON, towns.php, Berlin row, Berlin image — SEE §16 for full Nov 9 bug detail</span></li>
+<li><input type="checkbox"><span><b>B. Build All Town Pages:</b> 169 towns, template, Towns Manager Add Town, test Berlin / Waterbury + 1</span></li>
+<li><input type="checkbox"><span><b>C. Build Blog:</b> Do NOT start until towns done</span></li>
+<li><input type="checkbox"><span><b>D. Sofia / Sophia:</b> Backup Sofia image, confirm affiliate page — Canonical spelling Sophia (Locked #1) — SEE CONFLICT #2</span></li>
+<li><input type="checkbox"><span><b>E. Guestbook:</b> Priority 5 in original — now Priority 1 in build order per Starter (Guestbook first) — Approved-only, Admin approves</span></li></ul>
+<h3>PART 4 — ORIGINAL WORD DOC — 1-10 LIST</h3><ul class="check">
+<li><input type="checkbox"><span><b>1. Pricing $15 → $10</b> — See Part 2, DECIDE ONE PRICE — covers this</span></li>
+<li><input type="checkbox"><span><b>2. Apostille Fees</b> — See Part 2, verify fees</span></li>
+<li><input type="checkbox"><span><b>3. Towns:</b> Confirm town list, Waterbury = 0 miles, all towns link to Booked (BookedOrphan check)</span></li>
+<li><input type="checkbox"><span><b>4. Admin Folder Cleanup:</b> See §14 — settings.php missing, waterbury.php-old, debug.php, test.php</span></li>
+<li><input type="checkbox"><span><b>5. Secrets / Includes:</b> Confirm secrets.php outside public_html — Phase 1 — SEE CONFLICT #10</span></li>
+<li><input type="checkbox"><span><b>6. Backup Docs System:</b> Build MASTER-BACKUP.txt — Every change = Date / File / Old → New / Test result</span></li>
+<li><input type="checkbox"><span><b>7. Guestbook</b> — See Part 5</span></li>
+<li><input type="checkbox"><span><b>8. Sophia / Affiliate-Sofia</b> — See Part 5</span></li>
+<li><input type="checkbox"><span><b>9. Blog</b> — Off by default, do NOT start until towns done</span></li>
+<li><input type="checkbox"><span><b>10. Google Tracking:</b> Analytics, Search Console, GBP — verify all connected — SEE CONFLICT #12</span></li></ul>
+<h3>PART 5 — BUILD ORDER — Guestbook First, Then Sophia, Admin, Quote, Ads</h3><ul class="check">
+<li><input type="checkbox"><span><b>Guestbook:</b> /guestbook/ — Approved-only, Admin approves, + Booked → Guestbook opt-in checkbox (unchecked, saves guestbook_opt_in)</span></li>
+<li><input type="checkbox"><span><b>Sophia:</b> Widget — "I can't notarize or officiate — but I can help you get to the right place." Links: Booked, Quote, Guestbook. Disclaimer: "Virtual assistant • Not a real person"</span></li>
+<li><input type="checkbox"><span><b>Admin Power Center (Phase 3):</b> Approve Guestbook, View Bookings, Edit Pricing (fallback), Pricing Manager, Banner Rotation, Dashboard — See §14 + §15</span></li>
+<li><input type="checkbox"><span><b>Quote / Contact:</b> Emails owner + saves to Kanban, fix #85-#88 bugs</span></li>
+<li><input type="checkbox"><span><b>Ads Rotator:</b> ads/rotator.php, house banner fallback, rotator on ALL pages</span></li>
+<li><input type="checkbox"><span><b>Kanban:</b> With Email field — LOCAL ONLY, never public .html</span></li>
+<li><input type="checkbox"><span><b>Banner Rotator ALL Pages + Fit Images + BookedOrphan:</b> Fit banner / Ken photo / logo mobile + desktop, no stretch / crop. Every city page must link to Booked</span></li>
+<li><input type="checkbox"><span><b>Email Setup in setup.php:</b> info@ / bookings@ / quotes@ / admin@ / owner@ per domain, must check created + tested before Launch</span></li>
+<li><input type="checkbox"><span><b>Apostille:</b> Off by default — Send apostille-quote.php for audit before building (Still Not Audited)</span></li>
+<li><input type="checkbox"><span><b>Blog:</b> Off by default</span></li>
+<li><input type="checkbox"><span><b>QBO:</b> Off by default — Keep separate, NOT part of town template</span></li></ul>
+<h3>PART 6 — TEMPLATE SCRIPTS + SITEMAP + DUPS</h3><ul class="check">
+<li><input type="checkbox"><span><b>Template Scripts Order:</b> Script 2 (setup-booked) FIRST from proven 11:37 AM page, then Script 1 (create-pages), then Script 3 (setup-Sophia-guestbook). Do NOT build 1 or 3 before 2.</span></li>
+<li><input type="checkbox"><span><b>Sitemap:</b> DEFERRED until Booked done. Do NOT rebuild until Booked + Guestbook / Sophia URLs are final</span></li>
+<li><input type="checkbox"><span><b>Dups / Conflicts:</b> NOT removed. Mark SUPERSEDED only, keep in Archive. Dups: southwindsor / westhartford / westhaven / windsorlocks + seymour.php stub (47 bytes) to fix</span></li>
+<li><input type="checkbox"><span><b>City Image Box:</b> Fix city image box, upload city images (Phase 4)</span></li></ul>
+<h3>PART 7 — FOLDER SWEEP — Tomorrow, one folder at a time</h3><ul class="check">
+<li><input type="checkbox"><span><b>apostille-old</b> — delete or quarantine whole folder?</span></li>
+<li><input type="checkbox"><span><b>apostille-test</b> — delete or quarantine whole folder?</span></li>
+<li><input type="checkbox"><span><b>test/</b> — what's in it? Quarantine?</span></li>
+<li><input type="checkbox"><span><b>tools/</b> — what's in it? Quarantine?</span></li>
+<li><input type="checkbox"><span><b>ratecard/</b> folder — what's in it? Quarantine?</span></li>
+<li><input type="checkbox"><span><b>booked/ / data/ / apps/</b> — check for sensitive data / old files</span></li>
+<li><input type="checkbox"><span>Send <b>apostille-quote.php</b> — the live customer Apostille page, not another ratecard</span></li></ul>
+<p class="no-print"><button onclick="window.print()" style="padding:12px 22px;background:#D4AF37;font-weight:bold;border:0;border-radius:6px">Print / Save as PDF</button></p></div>
+
+<!-- ADMIN -->
+<div class="page" id="admin"><h2>14. /admin/ Inventory — All Versions Merged — v2.5 + Nov 9</h2>
+<p><b>Source:</b> Master §4 Site Structure + Word doc TODO 1-10 #4 + Tonight's audit + Nov 9 Backup admin/ inventory. This is the LIVE inventory — check off as you clean it.</p>
+<div class="warn"><b>⛔ /admin/ IS NOT A CONSOLE YET</b><br>Admin console (Approve Guestbook, View Bookings, Edit Pricing) is still PENDING. These are just the files sitting in the folder right now. — SEE CONFLICT #9 for version mismatch.</div>
+<h3>Nov 9, 2026 — 4:15 PM — Full Admin Inventory (Doc #5)</h3>
+<table><tr><th>File</th><th>Size / Notes</th></tr>
+<tr><td class="path">.htaccess</td><td>140 bytes</td></tr>
+<tr><td class="path">.htpasswd</td><td>117 bytes - password protection for admin</td></tr>
+<tr><td class="path">admin-api.php</td><td>8,650 bytes - UNKNOWN, second API file. Towns.php calls api.php, NOT this one. Do not delete until we know what it does.</td></tr>
+<tr><td class="path">admin-links.json</td><td>184 bytes</td></tr>
+<tr><td class="path">affiliate-sofia.php</td><td>4,208 bytes - Sofia affiliate page — SEE CONFLICT #2</td></tr>
+<tr><td class="path">api.php</td><td>4,208 bytes - THE REAL API for Towns Manager. Currently broken / blank. — SEE §16 Bug</td></tr>
+<tr><td class="path">debug.php</td><td>466 bytes - STILL OLD VERSION, see §16</td></tr>
+<tr><td class="path">error_log</td><td>14,543 bytes - check this for PHP errors — last modified 11/9/2026 1:43 PM</td></tr>
+<tr><td class="path">footer.php</td><td>4,276 bytes — SEE CONFLICT #11</td></tr>
+<tr><td class="path">header.php</td><td>4,725 bytes - shared header — SEE CONFLICT #11</td></tr>
+<tr><td class="path">index.php</td><td>20,322 bytes - admin dashboard</td></tr>
+<tr><td class="path">kanban.php</td><td>17,249 bytes - kanban board</td></tr>
+<tr><td class="path">pricing-config.php</td><td>811 bytes — SEE CONFLICT #3</td></tr>
+<tr><td class="path">pricing.php</td><td>10,431 bytes</td></tr>
+<tr><td class="path">quotes.log</td><td>196 bytes</td></tr>
+<tr><td class="path">send-quote.php</td><td>434 bytes</td></tr>
+<tr><td class="path">town-inventory.php</td><td>2,295 bytes</td></tr>
+<tr><td class="path">towns.php</td><td>Towns Manager UI, calls api.php?action=list</td></tr></table>
+<h3>v2.5 Inventory Table (Doc #2)</h3>
+<table><tr><th>File</th><th>Status</th><th>Action Tomorrow</th></tr>
+<tr><td><b>admin/pricing.php</b></td><td>GOOD — Single source of truth</td><td>DECIDE ONE PRICE — $15 vs Locked #7 $10 — update this + Locked #7 to match. Everything pulls from here. — SEE CONFLICT #1 + #3</td></tr>
+<tr><td><b>admin/city-summary.php</b></td><td>GOOD — 1,077 bytes</td><td>Keep. Verify it pulls pricing from pricing.php, not hard-coded.</td></tr>
+<tr><td><b>admin/settings.php</b></td><td><b>MISSING</b></td><td>Build it — needed for Admin Power Center. Flagged in Word doc 1-10 #4.</td></tr>
+<tr><td><b>admin/waterbury.php-old</b></td><td>JUNK — Old file</td><td>Quarantine → <b>waterbury.php-old.BAK-PRIVATE</b> — Do NOT delete day 1.</td></tr>
+<tr><td><b>admin/debug.php</b></td><td>JUNK — Temp / debug</td><td>Quarantine → <b>debug.php.BAK-PRIVATE</b> — Phase 1: delete temp files. — BUT Nov 9 bug needs NEW debug.php first — SEE §16</td></tr>
+<tr><td><b>admin/test.php</b></td><td>JUNK — Test file</td><td>Quarantine → <b>test.php.BAK-PRIVATE</b></td></tr>
+<tr><td><b>pricing-config.php</b> (in root / SERVICES, not admin)</td><td>OLD — Duplicate price source, 156 bytes</td><td>Already quarantined tonight → <b>pricing-config.php.BAK-PRIVATE</b>. admin/pricing.php replaces it. — SEE CONFLICT #3 — Cleanup Checklist says KEEP it.</td></tr></table>
+<h3>Admin To-Build — Still PENDING</h3><ul class="check">
+<li><input type="checkbox"><span><b>Admin Console:</b> Approve Guestbook, View Bookings, Edit Pricing (fallback) — TODO §10 #3</span></li>
+<li><input type="checkbox"><span><b>Admin Power Center (Phase 3):</b> Pricing Manager, Banner Rotation, Dashboard — See §15 for Dashboard charts</span></li>
+<li><input type="checkbox"><span><b>settings.php:</b> Build missing file — required for Admin Power Center</span></li>
+<li><input type="checkbox"><span><b>Admin Cleanup:</b> Quarantine waterbury.php-old, debug.php, test.php — see table above</span></li>
+<li><input type="checkbox"><span><b>Secrets Check:</b> Confirm secrets.php is OUTSIDE public_html — never in /admin/ public folder — SEE CONFLICT #10</span></li></ul>
+<p><b>Rule v2.5:</b> /admin/ must be password-protected before it holds anything real. No public admin pages. No internal TODO / Kanban / Vendor files in /admin/ unless password-protected.</p>
+<p><b>Other Admin / Site Items (Nov 9 §F):</b> kanban.php — check if used for tracking town pages. pricing.php + pricing-config.php — verify pricing shared, not hard-coded per town. quotes.log + send-quote.php — verify quote form works, where quotes go. index.php admin dashboard — verify links to Towns, Pricing, Kanban. .htaccess + .htpasswd — do not break. admin-links.json — what links does it hold? header.php / footer.php — shared, do not duplicate per town.</p></div>
+
+<!-- TOOLS TO BUILD -->
+<div class="page" id="tools-to-build"><h2>15. Tools To Build — Guestbook, Hit Tracker, Errors, KPIs — v2.6 NEW</h2>
+<p><b>Goal:</b> Know where traffic comes from, where they jump off, what breaks, and who wants out. No guessing. Dashboard shows it at a glance.</p>
+<div class="warn"><b>⛔ PRIVACY RULE — LOCKED #16</b><br>Guestbook emails are NEVER sold, NEVER shared, NEVER published. Unsubscribe must work in 1 click, no login. Hit tracker logs pages, NOT names / emails / VINs. No VIN in tracker, ever.</div>
+<h3>1. Guestbook Email List — How Do I Get It?</h3><ul class="check">
+<li><input type="checkbox"><span><b>Admin → Guestbook → Export Email List (.csv)</b> — Button in Admin only. Exports: Name, Email, Town, Service, Date Opted-In, Status (Subscribed / Unsubscribed). No other page can export.</span></li>
+<li><input type="checkbox"><span><b>Only opted-in emails export.</b> Booked checkbox = guestbook_opt_in = true. If unchecked, email is NOT in Guestbook list. Never add Booked emails to Guestbook list without opt-in.</span></li>
+<li><input type="checkbox"><span><b>Filter:</b> All / Subscribed Only / Unsubscribed Only / By Town / By Service / By Date Range</span></li>
+<li><input type="checkbox"><span><b>Count on Dashboard:</b> "Guestbook Subscribers: ___" — updates live from Supabase.</span></li></ul>
+<h3>2. Database Disconnected — What Happens?</h3><ul class="check">
+<li><input type="checkbox"><span><b>Health Check:</b> Admin Dashboard top bar shows: <b>● GREEN = DB Connected</b> / <b>● RED = DB Disconnected</b> — checks Supabase every 60 seconds.</span></li>
+<li><input type="checkbox"><span><b>If DB down:</b> Booked shows "We're having a hiccup — call (860) 518-5498 to book" — does NOT lose the booking. Saves to fallback: emails owner + logs to local file <b>/admin/_fallback_bookings.csv</b> (LOCAL ONLY, never public).</span></li>
+<li><input type="checkbox"><span><b>Alert:</b> Email owner@ + admin@ immediately: "DB Disconnected at [time] — fallback active"</span></li>
+<li><input type="checkbox"><span><b>Reconnect:</b> When DB back, Admin button: "Import Fallback Bookings → Supabase" — one click, no duplicates (checks phone + date + time).</span></li>
+<li><input type="checkbox"><span><b>Test:</b> Admin button: "Test DB Connection" — shows Green / Red + response time in ms.</span></li></ul>
+<h3>3. Hit Tracker — Where They Come From, Where They Go, Where They Jump Off</h3><p><b>This is the big one. Build this before you spend a dollar on ads.</b></p><ul class="check">
+<li><input type="checkbox"><span><b>Log every page hit:</b> Page URL, Referrer (Google / GBP / Facebook / Direct / Other site), Device (Mobile / Desktop), Town Page?, Time on page, Exit page.</span></li>
+<li><input type="checkbox"><span><b>Entry:</b> Where did they land first? — Home / Town page / Blog / Booked / Apostille? Dashboard shows Top 10 Entry Pages.</span></li>
+<li><input type="checkbox"><span><b>Exit / Jump-Off:</b> What was the LAST page before they left? Dashboard shows Top 10 Exit Pages. This tells you where they jump off.</span></li>
+<li><input type="checkbox"><span><b>Jump-Off Summary:</b> Admin writes 1 line per top exit page: "They leave on [X] because [Y] — Fix: [Z]" — Example: "They leave on Quote because price not clear — Fix: show $10 line on Quote."</span></li>
+<li><input type="checkbox"><span><b>Funnel:</b> Home → Town → Booked → Booked Done. Show drop-off % at each step. If 100 visit Town, 20 click Booked, 2 finish — funnel shows 80% lost at Town→Booked.</span></li>
+<li><input type="checkbox"><span><b>No cookies for tracking names.</b> Anonymous hit log only. No IP stored in plain text — hash it. No email / phone in hit log.</span></li>
+<li><input type="checkbox"><span><b>Use:</b> Supabase table <b>hits</b> + Admin Dashboard charts. Do NOT use Google Analytics as only source — you own this log.</span></li></ul>
+<h3>4. Unsubscribe — Guestbook</h3><ul class="check">
+<li><input type="checkbox"><span><b>Every Guestbook email has footer:</b> "Unsubscribe — 1 click, no login" — link: /guestbook/unsubscribe.php?token=___</span></li>
+<li><input type="checkbox"><span><b>1 click = done.</b> Shows: "You've been unsubscribed. You won't get Guestbook emails again." No "are you sure?" maze.</span></li>
+<li><input type="checkbox"><span><b>Sets:</b> guestbook_status = unsubscribed, date_unsubscribed = now. Keeps the row, never deletes — so we never re-add them by accident.</span></li>
+<li><input type="checkbox"><span><b>Admin:</b> Unsubscribed emails NEVER appear in Export Email List (Subscribed Only). Dashboard shows: Subscribed ___ / Unsubscribed ___ / Unsubscribe Rate ___%.</span></li>
+<li><input type="checkbox"><span><b>Re-subscribe:</b> Only if they check the Booked opt-in box again themselves. Admin can NOT re-subscribe someone manually.</span></li></ul>
+<h3>5. 404s + Other Errors — See What Breaks</h3><ul class="check">
+<li><input type="checkbox"><span><b>404 Log:</b> Every 404 logs: Requested URL, Referrer (where they clicked from), Time, Count. Dashboard shows Top 20 Broken Links.</span></li>
+<li><input type="checkbox"><span><b>Example:</b> /book (old) → 404, 42 hits, from Google — Fix: .htaccess redirect /book → /booked/</span></li>
+<li><input type="checkbox"><span><b>500 / PHP Errors:</b> Log to <b>/admin/_error_log.txt</b> LOCAL ONLY — never show PHP errors to visitors. Visitor sees: "Something broke — call (860) 518-5498" + error ID.</span></li>
+<li><input type="checkbox"><span><b>Admin Alert:</b> If same 404 hits 10x in 1 day, email admin@: "Broken link spike: [URL] — 10 hits"</span></li>
+<li><input type="checkbox"><span><b>Fix Loop:</b> Each 404 row has Admin button: "Mark Fixed" + redirect field. Fixed 404s drop off the list.</span></li></ul>
+<h3>6. Admin Dashboard — Histograms + Circle KPIs — At A Glance</h3><p><b>You said it right: circle with measurements. That's a donut / gauge. Build these 6 charts first.</b></p>
+<table><tr><th>Chart</th><th>What It Shows</th><th>Why It Matters</th></tr>
+<tr><td><b>1. Donut — Traffic Sources</b></td><td>Google ___% / GBP ___% / Facebook ___% / Direct ___% / Other ___%</td><td>Where to spend time / ads. If GBP is 60%, GBP matters most.</td></tr>
+<tr><td><b>2. Donut — Booked vs Jumped Off</b></td><td>Finished Booking ___% / Left on Booked ___% / Left on Town ___%</td><td>Your #1 KPI. If jump-off is high on Booked, Booked is broken.</td></tr>
+<tr><td><b>3. Histogram — Hits Per Day</b></td><td>Bars: Mon-Sun hits. Spike = what worked? Dip = what broke?</td><td>See at a glance if traffic is growing or dying.</td></tr>
+<tr><td><b>4. Histogram — Bookings Per Day / Week</b></td><td>Bars: Bookings. Overlay line: Guestbook opt-ins.</td><td>Bookings = money. Opt-ins = future reviews.</td></tr>
+<tr><td><b>5. Gauge — DB Health</b></td><td>Circle: GREEN 100% uptime / RED down. Number: Avg response ___ms</td><td>If DB down, you lose bookings. See it in 1 second.</td></tr>
+<tr><td><b>6. Gauge — 404s This Week</b></td><td>Circle: 0-10 Green / 11-50 Yellow / 51+ Red. Number: Top broken URL.</td><td>Broken links = lost customers. Fix the top one first.</td></tr></table>
+<ul class="check">
+<li><input type="checkbox"><span><b>Dashboard Top Row — 4 Big Numbers:</b> Hits Today / Bookings Today / Guestbook Subscribers / 404s This Week</span></li>
+<li><input type="checkbox"><span><b>Date Picker:</b> Today / 7 Days / 30 Days / All Time — all charts update together</span></li>
+<li><input type="checkbox"><span><b>Mobile:</b> Dashboard must fit phone — charts stack, numbers big, no sideways scroll</span></li>
+<li><input type="checkbox"><span><b>Export:</b> Dashboard → Export KPIs (.csv) — for your weekly review</span></li></ul>
+<h3>7. KPI Summary — What "Good" Looks Like</h3><ul class="check">
+<li><input type="checkbox"><span><b>Booked Conversion:</b> Town visits → Booked finishes. Goal: 5%+ to start. If under 2%, Town page or Booked is losing them.</span></li>
+<li><input type="checkbox"><span><b>Jump-Off:</b> Top Exit Page should NOT be Booked. If it is, Booked is the problem.</span></li>
+<li><input type="checkbox"><span><b>Unsubscribe Rate:</b> Under 2% = healthy. Over 5% = emails too many / wrong content.</span></li>
+<li><input type="checkbox"><span><b>404s:</b> Goal: 0 top 404s over 10 hits. Any 404 over 10 hits = fix that week.</span></li>
+<li><input type="checkbox"><span><b>DB Uptime:</b> Goal: 99.9%+. Any RED day = investigate same day.</span></li></ul>
+<p class="no-print"><button onclick="window.print()" style="padding:12px 22px;background:#D4AF37;font-weight:bold;border:0;border-radius:6px">Print / Save as PDF</button></p></div>
+
+<!-- BACKUP NOV 9 -->
+<div class="page" id="backup-nov9"><h2>16. FULL PROJECT BACKUP Nov 9, 2026 — Full Detail (Doc #5)</h2>
+<p><b>Date:</b> Monday, November 9, 2026 — <b>Site:</b> https://reliablenotaryct.us — <b>Owner / Builder:</b> User is building this site, teaching the AI each session — <b>Goal:</b> One template system for ALL Connecticut town pages, no hard-coding per town, then blog, Sofia, guestbook</p>
+<p><b>HOW TO RESUME NEXT TIME:</b> Paste this whole document back to Meta AI at the start of the next chat and say: "This is our backup from Nov 9. Pick up from Section 6A - fix api.php debug." The AI should NOT ask you to re-explain the template, Town Hall image rule, or file locations.</p>
+<h3>2. BACKUP FILES - WHERE THEY ARE NOW</h3>
+<p>User moved them on Nov 9, 2026 to: root / backup / — Full server path: <code>/home2/klmtech/public_html/reliablenotaryct.us/backup/</code></p>
+<table><tr><th>File in backup/</th><th>Status</th></tr><tr><td>berlin.php</td><td>BACKUP copy, NOT live. Live is in root.</td></tr><tr><td>waterbury.php</td><td>BACKUP copy</td></tr><tr><td>waterburyKEN.php</td><td>BACKUP copy, Ken version</td></tr></table>
+<p><b>RULE GOING FORWARD:</b> LIVE town pages: /public_html/reliablenotaryct.us/{town}.php — BACKUPS: /public_html/reliablenotaryct.us/backup/{town}.php — NEVER put backup town pages inside /admin/. That is what caused confusion. /admin/ should ONLY have admin files. Do NOT delete backup/ folder. It is the safety copy.</p>
+<p><b>Other Backups Needed - TO DO:</b> Backup Sofia image - find original file, copy to backup/ AND to local PC, note exact filename and where it is used in affiliate-sofia.php — Backup admin/ folder before any big fix — Backup Supabase towns table - export CSV before adding Berlin</p>
+<h3>3. THE CORE SYSTEM - HOW TOWN PAGES MUST WORK</h3>
+<p><b>Principle:</b> ONE template, NO hard-coding per town. User visits https://reliablenotaryct.us/berlin.php — berlin.php knows its town slug = berlin — It pulls town data from Supabase towns table, OR from page_details JSON — It renders using the shared template: header, hero, Town Hall image, services, pricing, FAQ, footer — To make a NEW town, we do NOT copy-paste a whole new hard-coded page. We create a new row in towns table + a thin {town}.php file that calls the template, OR we generate it from Towns Manager.</p>
+<p><b>Town Hall Image Rule - CRITICAL:</b> Image path is dynamic: /images/{town}.jpg — Berlin = /images/berlin.jpg — Waterbury = /images/waterbury.jpg — Admin has a field for this: townhall_image inside page_details JSON — Do NOT hard-code /images/berlin.jpg inside the template. Use the variable.</p>
+<table><tr><th>Column in Supabase towns Table</th><th>Example</th></tr><tr><td>slug</td><td>berlin</td></tr><tr><td>town_name</td><td>Berlin</td></tr><tr><td>page_details</td><td>JSON field, contains townhall_image, SEO, hero, services, FAQ</td></tr></table>
+<p><b>Towns Manager:</b> File: /admin/towns.php — It is FINE, it is not the bug — It calls: /admin/api.php?action=list — It displays: list of towns from Supabase — It says: "does not add or delete towns" - so currently it cannot create Berlin. That is a missing feature.</p>
+<p><b>API:</b> File: /admin/api.php — Expected: ?action=list returns JSON list of towns from Supabase — Current: returns BLANK screen when called without action, and also blank when called via debug without action</p>
+<h3>4. BERLIN - CURRENT STATUS</h3>
+<table><tr><th>Item</th><th>Status</th></tr><tr><td>Live file</td><td>/public_html/reliablenotaryct.us/berlin.php - EXISTS in root</td></tr><tr><td>Backup file</td><td>/public_html/reliablenotaryct.us/backup/berlin.php</td></tr><tr><td>Supabase row</td><td>DOES NOT EXIST YET. No row in towns table for Berlin.</td></tr><tr><td>Image</td><td>/images/berlin.jpg - Berlin Town Hall</td></tr><tr><td>Result</td><td>Berlin page may exist as a file, but Towns Manager cannot see it because Towns Manager only reads Supabase. Berlin will NOT show in Towns Manager until we add the Supabase row.</td></tr></table>
+<p><b>Next step for Berlin:</b> Add row to Supabase towns table with slug berlin, town_name Berlin, page_details with townhall_image /images/berlin.jpg, then verify it appears in Towns Manager</p>
+<p><b>Waterbury:</b> Live file in root if present, backup in backup/waterbury.php and backup/waterburyKEN.php. Same issue as Berlin - need to verify Supabase row exists.</p>
+<h3>5. TODAY'S BUG - api.php BLANK / Towns Manager Load Failed</h3>
+<p><b>Symptom:</b> Open https://reliablenotaryct.us/admin/towns.php - "Load failed" / blank list</p>
+<p><b>Root cause hypothesis:</b> api.php exits silently if $_GET['action'] is not set. It does not show an error.</p>
+<p><b>OLD debug.php - Still On Server:</b> OLD file size is 466 bytes. If FileZilla shows debug.php = 466 bytes, it is STILL the OLD file.</p>
+<pre>&lt;?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+echo "debug start&lt;br&gt;";
+echo "DIR: " . __DIR__ . "&lt;br&gt;";
+echo "Files in admin:&lt;br&gt;";
+foreach (glob(__DIR__ . '/*') as $f) {
+  echo basename($f) . "&lt;br&gt;";
+}
+echo "&lt;hr&gt;Now trying api.php...&lt;br&gt;";
+require __DIR__ . '/api.php';</pre>
+<p>This OLD version does NOT set $_GET['action'], so api.php quits silently, showing only "Now trying api.php..." and then blank.</p>
+<p><b>NEW debug.php - MUST Replace It:</b> NEW file should be about 250-280 bytes, NOT 466 bytes. It should NOT show "Files in admin:" or "DIR:" at all.</p>
+<pre>&lt;?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+echo "debug start&lt;br&gt;";
+$_GET['action'] = 'list';
+echo "Calling api.php with action=list...&lt;br&gt;&lt;hr&gt;";
+require __DIR__ . '/api.php';
+echo "&lt;hr&gt;api.php finished";</pre>
+<p><b>How To Correctly Replace debug.php:</b> In FileZilla, RIGHT pane (server), go to /home2/klmtech/public_html/reliablenotaryct.us/admin/ — Right-click debug.php - Delete — Create new debug.php with ONLY the NEW code above — Upload to RIGHT pane, click Yes if asked "Upload back to server?" — In browser, open https://reliablenotaryct.us/admin/debug.php — Press Ctrl + F5 for hard refresh, NOT just F5, to bypass cache — Screenshot the BROWSER page, NOT FileZilla</p>
+<p><b>Other Files To Check For This Bug:</b> admin-api.php - 8,650 bytes, unknown purpose. Check if Towns Manager should be calling this instead of api.php, or if this is an old backup. Do NOT delete until checked. error_log in /admin/ - 14,543 bytes, last modified 11/9/2026 1:43 PM. Open it, look for Fatal Error from api.php / Supabase. Check Supabase credentials in api.php - URL, anon key / service key, table name towns. Are they correct? Are they expired?</p>
+<h3>6. TO-DO LIST - IN ORDER - DO NOT SKIP (Nov 9 version — also merged into §13)</h3>
+<p><b>A. FINISH TODAY'S BUG - Priority 1:</b> Replace debug.php with NEW version, verify size is NOT 466 bytes, verify browser shows "debug start / Calling api.php with action=list" — Paste debug output, fix api.php to return JSON — Verify https://reliablenotaryct.us/admin/towns.php loads without "Load failed" — Investigate admin-api.php - what is it? Is it duplicate? — Check /admin/error_log for Supabase errors — Add Berlin row to Supabase towns table — Verify Berlin appears in Towns Manager — Verify live https://reliablenotaryct.us/berlin.php shows correct Town Hall image /images/berlin.jpg, not a hard-coded image</p>
+<p><b>B. BUILD ALL TOWN PAGES - Priority 2 - BIGGEST JOB:</b> User said: "we still have all the town pages to build" — List ALL Connecticut towns to build. Need full list - all 169 CT towns? Or only service area towns? Confirm with user. — For each town, need: slug, town name, Town Hall image /images/{slug}.jpg, SEO title, meta description, services, pricing, FAQ, Supabase row, thin {town}.php file in root — Do NOT hard-code each town page. Use template system. — Build Towns Manager "Add Town" feature, since current towns.php says it "does not add or delete towns" — Test 3 towns first: Berlin, Waterbury, plus one more, before bulk building all towns — Verify each town page: header, footer, Town Hall image loads, mobile view, no 404s</p>
+<p><b>C. BUILD THE BLOG - Priority 3 - AFTER TOWN PAGES:</b> User said: "before we start going into build the blog" — Do NOT start blog until town pages are done — Blog location: likely /blog/ or /public_html/reliablenotaryct.us/blog/ — Need: blog index, blog post template, categories, SEO — Blog posts should link to town pages for SEO — Need blog admin in /admin/? Or simple file-based? — Confirm: Does blog use Supabase too, or flat files?</p>
+<p><b>D. SOFIA - Priority 4:</b> File: /admin/affiliate-sofia.php - 4,208 bytes — Backup Sofia image - find original file name, where it is stored, what size — Copy Sofia image to: /public_html/reliablenotaryct.us/backup/sofia-image-backup.jpg (confirm exact name) + Local PC backup — Confirm what Sofia page does: affiliate? Bio? Landing page? — Confirm Sofia image path used in code - is it /images/sofia.jpg or other? — Do NOT lose Sofia image - user specifically said "backup her image" — Build / finish Sofia page after town pages and blog planning</p>
+<p><b>E. GUESTBOOK - Priority 5:</b> Guestbook does not exist yet, needs to be built — Where does guestbook live? /guestbook/ ? — Features needed: Name, town, message, date, approve / moderate? Spam protection? — Storage: Supabase table guestbook? Or file? Confirm with user — Admin moderation: approve / delete entries in /admin/? — Display: Show approved entries on public guestbook page — Link guestbook from homepage and town pages?</p>
+<p><b>F. OTHER ADMIN / SITE ITEMS:</b> kanban.php - 17,249 bytes - check if it is used for tracking town pages — pricing.php + pricing-config.php - pricing system, verify pricing is shared across town pages, not hard-coded per town — quotes.log + send-quote.php - quote form, verify it works, where quotes go — index.php admin dashboard - 20,322 bytes, verify links to Towns, Pricing, Kanban — .htaccess + .htpasswd - admin protection, do not break — admin-links.json - 184 bytes, what links does it hold? — header.php / footer.php - shared, do not duplicate per town</p>
+<h3>7. HOW TO RESUME NEXT SESSION (Nov 9)</h3><p>Read this backup, do NOT ask user to re-explain template, Town Hall image rule, or file locations — Ask for NEW debug.php browser screenshot only — Fix api.php — Then continue with To-Do list in order: Bug - Town Pages - Blog - Sofia - Guestbook — Never put backups in /admin/ again. Backups go in /public_html/reliablenotaryct.us/backup/ — Always distinguish FileZilla LEFT (local) vs RIGHT (server)</p>
+<h3>8. NOTES FOR AI - DO NOT FORGET</h3><p>User is on WhatsApp, mobile, using FileZilla on PC — User gets frustrated when AI appears to lose memory. Always restate: live files in root, backups in root/backup/, admin is clean, template system, Town Hall image rule. — User wants VERY thorough backup, even if 1000 pages. Err on side of more detail, not less. — User is teaching the system. Respect that. Do not assume hard-coded pages are okay. — When user says "better?" with a screenshot, check: File size, timestamp, and browser output, not just FileZilla list. — Old debug.php = 466 bytes, shows "Files in admin:" + "Now trying api.php..." — New debug.php = ~260 bytes, shows "debug start" + "Calling api.php with action=list..." — If browser still shows old output after FileZilla shows new timestamp, suspect: edited LEFT pane not RIGHT, or browser cache, or OPcache, or file not actually overwritten. Verify by file size. — Berlin is the test town. Get Berlin working first, then scale.</p>
+<p><b>END OF BACKUP - Nov 9, 2026 - Save this document as ReliableNotaryCT_Backup_Nov9.docx — Site: reliablenotaryct.us - Server: /home2/klmtech/public_html/reliablenotaryct.us/ - Backups: /home2/klmtech/public_html/reliablenotaryct.us/backup/</b></p></div>
+
+<!-- TOWNS -->
+<div class="page" id="towns"><h2>17. Town List + Town System</h2>
+<p>NOT full pages in BIBLE. Just list: Town, ZIP, County. Example: Waterbury, 06710, New Haven County. Full CT 169 in setup.php default.</p>
+<p><b>Town System Rules (merged):</b> ONE template, NO hard-coding. Thin {town}.php in ROOT + Supabase towns table row (slug, town_name, page_details JSON with townhall_image, SEO, hero, services, FAQ). Town Hall image = /images/{town}.jpg via variable. Towns Manager /admin/towns.php calls /admin/api.php?action=list. Towns Manager currently says "does not add or delete towns" — Add Town feature is MISSING, must be built. Test 3 towns first: Berlin, Waterbury, + 1 more, before bulk building all towns. Verify each: header, footer, Town Hall image loads, mobile view, no 404s. Every city page must link to Booked (BookedOrphan check). City Image Box: Fix city image box, upload city images (Phase 4). Locations hub: locations.php — ALL 169 towns, 8 counties. Counties: Fairfield, Hartford, Litchfield, Middlesex, New Haven, New London, Tolland, Windham.</p>
+<div class="conflict"><span class="label">CONFLICT — TOWN LIST — SEE §1 #6</span><br>Flat files vs Supabase vs /towns/ folder — Ken to confirm canonical. Berlin file exists, Supabase row does NOT exist. Waterbury duplicates — only ONE in root + ONE in /towns/ max.</div>
+<p><b>Known town page details from §7:</b> ~90% = 1,661 bytes TEMPLATE. Specials 4,400-5,000: rocky-hill (4,469), south-windsor (4,490), west-hartford (5,003), west-haven (4,549), windsor-locks (4,490). Duplicates ON HOLD: southwindsor vs south-windsor, westhartford vs west-hartford, westhaven vs west-haven, windsorlocks vs windsor-locks. Stub: seymour.php = 47 bytes only — FIX.</p></div>
+
+<!-- BACKUP RULES -->
+<div class="page" id="backup-rules"><h2>18. Backup Rules / Spock Rules</h2><ul><li><b>SPOCK RULE — NO CODE until Ken says "give me code".</b> Concept first, then ask "Do you want me to generate code?" Full page code only, never inserts. Est Oct 11 2026, re-locked Nov 19 2026 in v2.3.</li><li>Future backups must include: header/footer + body of town/city pages, code for index, apostille, admin, code for non-template pages, full website structure, what non-template pages are for, AND version table.</li><li>Backup triggers: "Create complete session backup" / "Full backup please" / "Save everything"</li><li>Every change = Date / File / Old → New / Test result + Version Table row.</li><li>Never delete without asking. Mark duplicates SUPERSEDED, keep in Archive.</li><li>Quarantine, don't delete: Rename to .BAK-PRIVATE first. Delete only after 30 days confirmed clean. — SEE CONFLICT #5 for /backup/ vs .BAK-PRIVATE vs _archive/.</li><li>Backup Docs System: Build MASTER-BACKUP.txt — Every change = Date / File / Old → New / Test result</li></ul></div>
+
+<!-- QUESTIONS -->
+<div class="page" id="questions"><h2>19. Questions To Add As We Go — LIVING SECTION</h2>
+<p><b>Instructions:</b> Every new question Ken asks, and every answer Ken gives, gets added here with a date. Do NOT delete old questions — mark them ANSWERED + move answer to Locked / Conflicts.</p>
+<table><tr><th>Date</th><th>Question</th><th>Status</th><th>Answer / Decision</th></tr>
+<tr><td>Nov 23, 2026</td><td>Did one of those docs give you the server structure?</td><td>ANSWERED in chat</td><td>Yes — Doc #2 §4 text tree + Doc #4 cleanup checklist + Doc #5 Nov 9 backup. Merged into §5 + §6 + §7 of this Bible.</td></tr>
+<tr><td>Nov 23, 2026</td><td>Consolidate all 5 docs into 1 Bible, conflicts in Yellow, full HTML, as much info as possible?</td><td>DONE — This doc</td><td>CONSOLIDATED BIBLE v1.0 — 14 conflicts flagged in Yellow in §1. Nothing deleted.</td></tr>
+<tr><td>___</td><td>What is the ONE price? $10 vs $15 vs $5 vs $150?</td><td>OPEN — CONFLICT #1</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Sophia vs Sofia — rename files/images or keep file names?</td><td>OPEN — CONFLICT #2</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Which pricing file is single source? admin/pricing.php vs pricing-config.php?</td><td>OPEN — CONFLICT #3</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Booked slots: 15-min vs 30-min? 9am-7pm vs 9am-8pm? Mon-Fri vs 7 days?</td><td>OPEN — CONFLICT #4</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Backup method: /backup/ vs .BAK-PRIVATE vs _archive/ — which for which type?</td><td>OPEN — CONFLICT #5</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Town pages canonical: flat ROOT files + Supabase vs /towns/ folder?</td><td>OPEN — CONFLICT #6</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Apostille fees — which are real? $40 / $20 / $50 / $51 / $150 / $1.50/mi?</td><td>OPEN — CONFLICT #7</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Tools list — confirm final tools? WordPress? Canva? Namecheap? Cloudflare? Stripe/PayPal/Zelle?</td><td>OPEN — §11</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Blog — Supabase or flat files? Blog admin in /admin/ or file-based?</td><td>OPEN</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>Guestbook storage — Supabase table guestbook or file? Spam protection?</td><td>OPEN</td><td>Ken to decide: ________________</td></tr>
+<tr><td>___</td><td>ADD NEW QUESTION HERE — Date / Question / Status / Answer</td><td>OPEN</td><td></td></tr></table>
+<p><b>How to add a question:</b> Copy the last row, fill Date + Question, leave Status = OPEN until Ken answers. When answered, update this table + update §1 Conflicts + §3 Locked + §3 Version Table.</p></div>
+
+<!-- APPENDIX -->
+<div class="page" id="appendix"><h2>20. Appendix — Archive</h2>
+<p>Old MASTER saved as <b>MASTER_OLD_2026-11-19</b> — contains all 9,193 duplicate copies for reference. NOT in v2.</p>
+<p>Original Word doc: 60,126 paragraphs, 3,166,286 characters — searched Nov 19, 2026. Section 6 A-E found 4 copies, 1-10 List found 2 copies — both deduped to 1 copy in §13 v2.5. No single 1-105 numbered list found in Word doc — #85-#105 numbers were tonight's chat counting.</p>
+<p>FileZilla screenshots (25) archived — replaced by §7 text tree above. Original filenames: media/image2.png … media/image26.png in Word doc.</p>
+<p>Keeper images in this HTML: banner, ken.jpg, logo, business-card, cashapp-qr.</p>
+<p><b>Doc #3 full history file:</b> Kept whole as source. Its content is merged into this Bible — LAW sections, Booked status, version tables, town system, admin inventory, header code, Sophia/Sofia history, pricing conflicts, debug.php / api.php, folder sweep, etc. No content deleted in merge — if a detail from Doc #3 is not in a specific section above, it lives in §16 (Nov 9 Backup) or §13 (Consolidated TODO) or §1 (Conflicts).</p>
+<p><b>Original MASTER doc kept untouched:</b> Per Server Cleanup Checklist footer — Reliable-Cleaned.html companion — Original MASTER doc kept untouched.</p>
+<p class="no-print"><button onclick="window.print()" style="padding:12px 22px;background:#D4AF37;font-weight:bold;border:0;border-radius:6px">Print / Save as PDF</button></p>
+<p style="text-align:center;color:#666"><small>RELIABLE NOTARY CT — CONSOLIDATED TRAINING BIBLE v1.0 — Nov 23, 2026 — Sources: Doc #1 + Doc #2 + Doc #3 + Doc #4 + Doc #5 — Nothing deleted. Conflicts in Yellow.</small></p></div>
+</body>
+</html>
